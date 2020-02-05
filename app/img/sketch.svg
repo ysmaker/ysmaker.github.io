@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="32px" viewBox="0 0 35 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>sketch-2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Вакансии" transform="translate(-442.000000, -1185.000000)" fill-rule="nonzero">
+            <g transform="translate(373.000000, 947.000000)" id="1">
+                <g transform="translate(2.000000, 102.000000)">
+                    <g id="Скилы" transform="translate(24.000000, 108.000000)">
+                        <g id="sketch-2" transform="translate(43.000000, 28.000000)">
+                            <g id="a-link" transform="translate(0.006582, 11.147361)" fill="#EA6C00">
+                                <polygon id="a" points="6.99603581 0 17.2719548 20.1130087 0 0"></polygon>
+                            </g>
+                            <g id="b-link" transform="translate(25.553418, 21.647361) scale(-1, 1) translate(-25.553418, -21.647361) translate(16.553418, 11.147361)" fill="#EA6C00">
+                                <polygon id="b" points="6.99603581 0 17.2719548 20.1130087 0 0"></polygon>
+                            </g>
+                            <g id="c-link" transform="translate(7.002253, 11.147361)" fill="#FDAD00">
+                                <polygon id="c" points="0 0 20.551838 0 10.275919 20.1130087"></polygon>
+                            </g>
+                            <g id="d-link" transform="translate(7.002253, 0.000731)" fill="#FDD231">
+                                <polygon id="d" points="10.275919 0 0.540857088 1.02905466 0 11.1466294"></polygon>
+                            </g>
+                            <g id="e-link" transform="translate(22.054091, 6.000731) scale(-1, 1) translate(-22.054091, -6.000731) translate(16.554091, 0.000731)" fill="#FDD231">
+                                <polygon id="e" points="10.275919 0 0.540857088 1.02905466 0 11.1466294"></polygon>
+                            </g>
+                            <g id="f-link" transform="translate(30.553418, 6.529786) scale(-1, 1) translate(-30.553418, -6.529786) translate(26.553418, 1.029786)" fill="#FDAD00">
+                                <polygon id="f" points="0 10.1175748 7.5368929 0 6.99603581 10.1175748"></polygon>
+                            </g>
+                            <g id="g-link" transform="translate(0.006582, 1.029786)" fill="#FDAD00">
+                                <polygon id="g" points="0 10.1175748 7.5368929 0 6.99603581 10.1175748"></polygon>
+                            </g>
+                            <g id="h-link" transform="translate(7.002253, 0.000731)" fill="#FEEEB7">
+                                <polygon id="h" points="10.275919 0 0 11.1466294 20.551838 11.1466294"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
