@@ -48,7 +48,7 @@ $(document).ready(function(){
 	});
 
 	//E-mail Ajax Send
-	$("form.callback").submit(function() {
+	$(".hr-form").submit(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
