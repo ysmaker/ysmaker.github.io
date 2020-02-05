@@ -68,6 +68,7 @@ $(document).ready(function(){
 
 	var close = function(e) {
 		$('.main_content_alternativa').css({'transform': 'none'})
+		$('.main').css({'display': 'block'})
 		setTimeout(function()
 		{
 			$('.perspective').removeClass('animate')
@@ -87,6 +88,7 @@ $(document).ready(function(){
 		$('.__closePopup').on('click', close);
 		$('.perspective').addClass('animate').addClass('modalview');
 		$('.main_content_alternativa').css({'transform': 'translateZ(-200px) rotateX(80deg)'})
+		$('.main').css({'display': 'none'})
 		$('.content_alternativa_side').css({'bottom':'0px'})
 	});
 
