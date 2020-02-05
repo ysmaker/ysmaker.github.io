@@ -471,12 +471,14 @@ button
 		&__wrap
 			max-width: 275px
 			width: 100%
+			cursor: pointer
 			background-repeat: no-repeat
 			background-position: top center
 			background-size: cover
 			padding: 203px 24px 85px
 			position: relative
 			z-index: 10
+			transition: .2s all
 			&__desc
 				position: absolute
 				width: 210px
@@ -504,6 +506,9 @@ button
 					border-bottom: 10px solid #131313
 			&:hover &__desc
 				opacity: 1
+				transition: .3s all
+			&:hover
+				transform: scale(1.1)
 				transition: .3s all
 		&__num
 			position: absolute
@@ -551,7 +556,7 @@ button
 			padding-top: 0
 			.game-col
 				&__wrap
-					padding: 220px 24px 102px
+					// padding: 220px 24px 102px
 					max-width: 310px
 					box-shadow: 0 36px 61px rgba(31, 8, 46, 0.42)
 					&__desc
@@ -575,7 +580,7 @@ button
 		&.game-col__3
 			.game-col
 				&__wrap
-					padding-top: 193px
+					// padding-top: 193px
 					box-shadow: 0 32px 54px rgba(7, 56, 45, 0.42)
 					&__desc
 						color: gray
