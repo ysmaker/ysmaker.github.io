@@ -73,6 +73,9 @@
 
 @media only screen and (max-width : 780px)
 	.main
+		&-video
+			iframe
+				display: none
 		&-down
 			bottom: 10px
 			font-size: 10px
@@ -174,7 +177,6 @@
 @media only screen and (max-width : 680px)
 	.main
 		&-info
-			left: 34%
 			p
 				font-size: 1vw
 			span
@@ -205,6 +207,24 @@
 		&-subtitle
 			font-size: 22px
 			padding-bottom: 20px
+
+@media only screen and (max-width : 768px)
+	.main
+		height: 100vh
+		&-info
+			top: 67.5%
+			left: 50%
+			margin-left: -110px
+		&-video
+			height: 100%
+			width: 100%
+			background: url(../img/main-img.jpg) 40% no-repeat;
+			background-size: cover;
+		&-img
+			img
+				height: 100%
+				width: 100%
+				object-fit: cover
 
 @media only screen and (max-width : 450px)
 	.main-down
@@ -240,6 +260,11 @@
 		label
 			left: 0
 
+@media only screen and (max-width : 425px)
+	.main-info
+		top: 57.2%
+		left: 28%
+
 @media only screen and (max-width : 400px)
 	.summary
 		&-col
@@ -249,3 +274,22 @@
 					max-width: 90px
 				p
 					padding-bottom: 20px
+
+@media only screen and (max-width : 375px)
+	.main-img
+		width: 170%
+	.main-info
+		top: 54.4%
+		left: 53.6%
+		span
+			// font-size: 15px;
+			text-align: center
+			font-size: 1.4rem
+		p
+			font-size: 0.9rem
+		    // font-size: 12px;
+
+@media only screen and (max-width : 320px)
+	.main-info
+		top: 56.2%
+		left: 22%
