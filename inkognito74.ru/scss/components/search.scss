@@ -84,3 +84,43 @@
 		}
 	}
 }
+@media (max-width: 768px)
+{
+	.search-param
+	{
+		padding-bottom: 10px;
+	}
+	.search-param-city
+	{
+		.search-param-options
+		{
+			flex-direction:column;
+		}
+		.search-param-options-item
+		{
+			margin-bottom: 15px;
+		}
+	}
+	.search-param-options-row
+	{
+		display: flex;
+		flex-direction:column;
+	}
+	.search-param-options
+	{
+		flex-direction:column;
+	}
+	.search-param-options-item-title
+	{
+		display: inline-block;
+	}
+	.search-param-sumbit
+	{
+		display: flex;
+		justify-content:center;
+	}
+	.search-param-options-item-wr
+	{
+		margin-bottom: 20px;
+	}
+}

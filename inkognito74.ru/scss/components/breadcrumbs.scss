@@ -48,16 +48,15 @@
 	{
 		ul
 		{
-			flex-direction:column;
 			li
 			{
+				span
+				{
+					font-size: 11px;
+				}
 				a
 				{
-					display: inline-block;
-				}
-				&:after
-				{
-					display: none;
+					font-size: 11px;
 				}
 			}
 		}
