@@ -1,0 +1,50 @@
+/* ********************** */
+@import '../node_modules/slick-carousel/slick/slick.scss';
+@import '../node_modules/slick-carousel/slick/slick-theme.scss';
+@import 'vendors/font-awesome.min.scss';
+@import 'vendors/jquery.formstyler.scss';
+
+/* base */
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/grid';
+@import 'base/buttons';
+
+//standart-components
+@import 'standart-components/standart-components.scss';
+@import 'standart-components/404.scss';
+@import 'standart-components/filter.scss';
+
+/* components */
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumbs';
+@import 'components/main-banner';
+@import 'components/search';
+@import 'components/left-menu';
+@import 'components/cards';
+@import 'components/portfolio';
+
+
+
+body
+{
+	min-width: 320px;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
