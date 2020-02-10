@@ -1,6 +1,7 @@
 .left-menu
 {
 	margin-right: 30px;
+	flex-basis:35%;
 }
 .left-menu__btn
 {
@@ -115,6 +116,7 @@
 {
 	.left-menu
 	{
+		flex-basis:100%;
 		width: 100%;
 		margin-right: 0;
 	}
