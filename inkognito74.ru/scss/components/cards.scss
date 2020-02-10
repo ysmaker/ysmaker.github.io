@@ -57,10 +57,19 @@ h3
 .cards__img-wr
 {
 	position: absolute;
+	height: 100%;
 	top: 0;
+	left: 0;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+	}
 }
 .cards__img
 {
+	position: relative;
 	height: 334px;
 	width: 270px;
 	background-size: cover;
