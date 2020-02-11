@@ -144,6 +144,13 @@ header
 {
 	display: block;
 }
+.header__burger
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
 @media (max-width: 992px) {
 	.header__nav
 	{
@@ -174,6 +181,7 @@ header
 		display: block;
 	}
 }
+
 
 @media (max-width: 1200px)
 {

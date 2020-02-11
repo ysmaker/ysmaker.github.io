@@ -75,7 +75,11 @@
 }
 .portfolio__img_mx
 {
+	max-width: 470px;
 	width: 100%;
+	height: 685px;
+	object-fit: cover;
+
 }
 .portfoilio__phone
 {
@@ -90,6 +94,7 @@
 .portfolio__phone-text
 {
 	text-transform: uppercase;
+	white-space: nowrap;
 	font-size: 24px;
 	font-weight: bold;
 	color: $red;
@@ -254,6 +259,10 @@
 {
 	margin-bottom: 50px;
 }
+.porfolio__slick img
+{
+	height: 208px;
+}
 .portfoliso__list-name
 {
 	color: #d92929;
@@ -361,14 +370,16 @@
 	.portfolio__wrapper
 	{
 		flex-direction: column;
+		align-items: center;
 	}
 	.portfolio__right
 	{
 		width: 100%;
+		max-width: 100%;
 	}
 	.portfolio__left
 	{
-		max-width: 100%;
+		margin-bottom: 50px;
 	}
 	.portfolio__phone-text
 	{
@@ -382,6 +393,32 @@
 	.porfolio__slick img
 	{
 		max-height: 100%;
+		width: 100%;
+		object-fit: contain;
+		height: 320px;
 	}
 
+}
+@media (max-width: 500px)
+{
+	.porfolio__slick
+	{
+		max-width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.portfolio__img_mx
+	{
+		height: 504px;
+		object-fit: cover;
+	}
+	.cards__checked
+	{
+		width: 65px;
+	}
+	.cards__status
+	{
+		width: 90px;
+	}
+	
 }

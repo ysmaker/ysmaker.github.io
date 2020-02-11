@@ -72,6 +72,14 @@ var o2 =
 					settings: {
 						slidesToShow: 2,
 					}
+				},
+				{
+					breakpoint: 500,
+					settings: {
+						slidesToShow: 1,
+						variableWidth: true,
+						centerMode: true
+					}
 				}
 			]
 

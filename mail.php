@@ -5,7 +5,7 @@ $contact = $_POST['contact'];
 
 $to      = 'hr@gta5.net';
 $subject = 'Уведомление с сайта GTA5.RU';
-$headers = 'From: isaniksa@gmail.com' . "\r\n" .
+$headers = 'From: webmaster@gta5.ru' . "\r\n" .
 'MIME-Version: 1.0' . "\r\n" . 'Content-type: text/plain; charset=UTF-8' . "\r\n" .
 'Reply-To: gona588a@gmail.com' . "\r\n" .
 'X-Mailer: PHP/' . phpversion();
