@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158264829-1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158264829-1');
+</script>
+<body class="perspective effect-laydown">
+	<div class="main_content_alternativa">
+		<div class="content_alternativa_side">
+			@@include('./components/header.html')
+			@@include('./components/main.html')
+			@@include('./components/game.html')
+			@@include('./components/footer.html')
+		</div>
+	</div>
+	@@include('./components/contact-form.html')
+	@@include('./components/scripts.html')
+</body>
+</html>

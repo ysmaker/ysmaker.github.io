@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158264829-1');
+</script>
+<body class="perspective effect-laydown">
+	<div class="main_content_alternativa">
+		<div class="content_alternativa_side">
+			@@include('./components/header-second.html')
+			<div class="page">
+				@@include('./components/page-top.html')
+				@@include('./components/page-content.html')
+				<div class="page-bg">
+					<img src="img/content-bg.png" alt="">
+				</div>
+			</div>
+			@@include('./components/footer.html')
+		</div>
+	</div>
+	@@include('./components/contact-form.html')
+	@@include('./components/modal.html')
+	@@include('./components/scripts.html')
+</body>
+</html>

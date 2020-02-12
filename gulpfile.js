@@ -10,6 +10,7 @@ var gulp           = require('gulp'),
 		imagemin       = require('gulp-imagemin'),
 		cache          = require('gulp-cache'),
 		autoprefixer   = require('gulp-autoprefixer'),
+		fileinclude  = require('gulp-file-include'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
 		rsync          = require('gulp-rsync');
@@ -35,6 +36,17 @@ gulp.task('js', ['common-js'], function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
+// fileinclude - простейший шабланизатор
+gulp.task('fileinclude', function()
+{
+	gulp.src('app/src/*.html') // откуда брать файлы
+	.pipe(fileinclude({
+		prefix: '@@',
+		basepath: '@file'
+	}))
+	.pipe(gulp.dest("app/")); // сюда кладется скомпилированные html файлы
+});
+
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
@@ -56,10 +68,12 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
+gulp.task('watch', ['sass','fileinclude', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
+	gulp.watch(['app/src/*.html','app/src/**/*.html'],['fileinclude']);
+	gulp.watch('app/src/*.html', browserSync.reload);
+	gulp.watch('app/src/**/*.html', browserSync.reload);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browserSync.reload);
 });
 
 gulp.task('imagemin', function() {
@@ -68,7 +82,7 @@ gulp.task('imagemin', function() {
 	.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
+gulp.task('build', ['removedist','fileinclude', 'imagemin', 'sass', 'js'], function() {
 
 	var buildFiles = gulp.src([
 		'app/*.html',
