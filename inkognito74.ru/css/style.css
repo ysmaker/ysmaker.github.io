@@ -6649,7 +6649,7 @@ header {
   right: 20px; }
 
 .left-menu__pluse {
-  display: none;
+  display: block;
   width: 15px;
   height: 3px;
   background-color: #73404a;
@@ -6660,7 +6660,7 @@ header {
           transform: rotate(90deg); }
 
 .left-menu__btn.active .left-menu__pluse {
-  display: block; }
+  display: none; }
 
 .left-menu__banner-r {
   max-width: 270px;

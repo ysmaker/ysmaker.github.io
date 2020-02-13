@@ -128,8 +128,10 @@ var o2 =
 	{
 		toggle: function(instance)
 		{
-		    $(instance).toggleClass('active');
+			$(instance).toggleClass('active');
 			$(instance).next().slideToggle(300);
+			$(instance).parent().siblings().children('.left-menu__btn').removeClass('active')
+			$(instance).parent().siblings().children('.left-menu__list').css("display", "none")	
 		}
 	},
 	menu:
