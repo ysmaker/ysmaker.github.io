@@ -86,7 +86,7 @@
 }
 .left-menu__pluse
 {
-	display: none;
+	display: block;
 	width: 15px;
 	height: 3px;
 	background-color: #73404a;
@@ -96,7 +96,7 @@
 }
 .left-menu__btn.active .left-menu__pluse
 {
-	display: block;
+	display: none;
 }
 .left-menu__banner-r
 {

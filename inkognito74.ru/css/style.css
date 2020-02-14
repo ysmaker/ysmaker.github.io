@@ -6809,16 +6809,21 @@ h3 {
   display: none; }
 
 .cards__phone {
-  background-color: #d92929;
+  background-color: #fafafb;
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
   width: 270px; }
+  .cards__phone.cards__phone__vip {
+    background-color: #d92929; }
+    .cards__phone.cards__phone__vip .cards__phone-text {
+      color: white; }
 
 .cards__phone-text {
   text-transform: uppercase;
   font-size: 18px;
   color: #ffffff;
+  color: #333333;
   margin-left: 8px;
   margin-right: 8px; }
 
@@ -6831,13 +6836,18 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #f0f0f0;
   padding-left: 15px; }
   .cards__price_pink {
     background-color: #fafafb;
     cursor: pointer;
     padding-bottom: 15px; }
+    .cards__price_pink .cards__price {
+      background-color: #fff; }
   .cards__price_pink:hover {
     background-color: #f2d5d5; }
+    .cards__price_pink:hover .cards__price {
+      background-color: #f2d5d5; }
   .cards__price img {
     margin-right: 10px; }
 
