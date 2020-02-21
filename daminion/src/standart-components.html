@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./components/pagehead.html')
+</head>
+<body>
+	@@include('./components/header.html')
+		<section class="standart-components">
+			<div class="container" style="padding-top: 30px;">
+				<div class="bread-crumbs">
+					<div class="container">
+						<ul class="bread-crumbs__list clearfix">
+							<li>
+								<a href="#">Daminion project</a>
+							</li>
+							<li>
+								<span>breadcumbs component</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="components" style="padding-top: 70px;">
+					<div class="component-title" style="margin-bottom: 20px;">
+						Logo
+					</div>
+					@@include('../img/svg/logo.svg')
+				</div>
+				<div class="components" style="padding-top: 70px;">
+					<div class="component-title" style="margin-bottom: 20px;">
+						Big svg logo
+					</div>
+					<div class="big_logo_svg" style="width:500px;">
+						@@include('../img/svg/logo.svg')
+					</div>
+				</div>
+				<div class="components" style="padding-top: 70px;">
+					<div class="component-title" style="margin-bottom: 20px;">
+						Typography
+					</div>
+					<div>Headers</div>
+					<p>Font — Roboto</p>
+					<h1>H1 Headline 60 Black</h1>
+					<h2>H2 Headline 48 Bold</h2>
+					<h3>H3 Headline 48 Regular</h3>
+					<h4>H4 Headline 24 Medium</h4>
+					<h5>H5 Headline 24 Light</h5>
+				</div>
+				<div class="components" style="padding-top: 70px;">
+					<div style="margin-bottom: 20px;">Text breakpoints</div>
+					<div>Body 20 Bold</div>
+					<div>Body 20 Regular</div>
+					<div>Body 16 Regular</div>
+					<div>Body 14 Medium</div>
+					<div>Body 14 Regular</div>
+					<div>Caption 12</div>
+					<div>Caption 11</div>
+				</div>
+				<div class="components" style="padding-top: 70px;">
+					<div class="component-title" style="margin-bottom: 20px;">
+						Default buttons
+					</div>
+					<div class="buttons" style="margin-bottom: 50px;">
+						<button class="button">
+							Button
+						</button>
+						<button class="button">
+							Button
+						</button>
+						<button class="button">
+							Button
+						</button>
+						<button disabled class="button">
+							Button
+						</button>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Yellow buttons
+					</div>
+					<div class="buttons" style="margin-bottom: 50px;">
+						<button class="button button_yellow">
+							Button
+						</button>
+						<button class="button button_yellow">
+							Button
+						</button>
+						<button class="button button_yellow">
+							Button
+						</button>
+						<button disabled class="button">
+							Button
+						</button>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Blue buttons
+					</div>
+					<div class="buttons" style="margin-bottom: 50px;">
+						<button class="button button_blue">
+							Button
+						</button>
+						<button class="button button_blue">
+							Button
+						</button>
+						<button class="button button_blue">
+							Button
+						</button>
+						<button disabled class="button">
+							Button
+						</button>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Big buttons
+					</div>
+					<div class="buttons" style="margin-bottom: 50px;">
+						<button class="button button_size_large button_yellow">
+							Button
+						</button>
+						<button class="button button_size_large button_yellow">
+							Button
+						</button>
+						<button class="button button_size_large button_yellow">
+							Button
+						</button>
+						<button disabled class="button button_size_large">
+							Button
+						</button>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Links
+					</div>
+					<div class="buttons" style="margin-bottom: 50px;">
+						<a href="#" class="link">
+							Accept Cookie Policy
+						</a>
+						<a href="#" class="link">
+							Accept Cookie Policy
+						</a>
+						<a href="#" class="link">
+							Accept Cookie Policy
+						</a>
+						<a class="link link_disabled" href="#">
+							Accept Cookie Policy
+						</a>
+					</div>
+					<div class="buttons" style="margin-bottom: 50px;">
+						<div class="svg_link">
+							@@include('../img/svg/plus.svg')
+							<a href="#">
+								Click here
+							</a>
+						</div>
+						<div class="svg_link">
+							@@include('../img/svg/plus.svg')
+							<a href="#">
+								Click here
+							</a>
+						</div>
+						<div class="svg_link">
+							@@include('../img/svg/plus.svg')
+							<a href="#">
+								Click here
+							</a>
+						</div>
+						<div class="svg_link svg_link_disabled">
+							@@include('../img/svg/plus.svg')
+							<a href="#">
+								Click here
+							</a>
+						</div>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Inputs
+					</div>
+					<div class="inputs" style="margin-bottom: 50px;height:50px;">
+						<input placeholder="Your business e-mail" type="text" class="input" style="margin-right: 20px;">
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Input disabled
+					</div>
+					<div class="inputs" style="margin-bottom: 50px;height:50px;">
+						<input disabled placeholder="Your business e-mail" type="text" class="input input__disabled" style="margin-right: 20px;">
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Input class "error"
+					</div>
+					<div class="inputs" style="margin-bottom: 50px;">
+						<input placeholder="Error" type="text" class="input error">
+					</div>
+					<div class="components" style="margin-bottom: 50px;">
+						<div style="margin-bottom: 40px;">Slider</div>
+						<div style="width: 300px">
+							<div class="daminion_range"></div>
+						</div>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Checkboxes
+					</div>
+					<div class="checkboxes" style="margin-bottom: 50px;">
+						<label class="checkbox-label">
+							<input type="checkbox" class="checkbox">
+							<span></span>
+							checkbox
+						</label>
+						<label class="checkbox-label">
+							<input type="checkbox" class="checkbox">
+							<span></span>
+							checkbox
+						</label>
+						<label class="checkbox-label">
+							<input type="checkbox" class="checkbox">
+							<span></span>
+							checkbox
+						</label>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Radio buttons
+					</div>
+					<div class="radios" style="margin-bottom: 50px;">
+						<label class="radio-label">
+							<input type="radio" name="radio" class="radio">
+							<span></span>
+							standart radio
+						</label>
+						<label class="radio-label">
+							<input type="radio" name="radio" class="radio">
+							<span></span>
+							standart radio
+						</label>
+						<label class="radio-label">
+							<input type="radio" name="radio" class="radio">
+							<span></span>
+							standart radio
+						</label>
+					</div>
+					<div class="component-title" style="margin-bottom: 20px;">
+						Input mask phone "_phone-mask"
+					</div>
+					<div class="inputs" style="margin-bottom: 50px;height:50px;">
+						<input placeholder="+7 (495) 558-24-53" type="text" class="input _phone-mask" style="margin-right: 20px;">
+					</div>
+					<div class="for-popup" style="margin-bottom: 50px;">
+						<button onclick="o2.popups.showPopup('.popup');" class="button">
+							Popup
+						</button>
+					</div>
+				</div>
+				<label class="custom-input">
+					<div class="custom-input__placeholder">First name, last name</div>
+					<input class="wer" type="text" onfocus="o2.customPlaceholder.customPlaceholder(this)" onblur="o2.customPlaceholder.customPlaceholderHide(this)">
+				</label>
+				<div class="components" style="padding-top: 70px;">
+					<div class="component-title" style="margin-bottom: 20px;">
+						icons
+					</div>
+					<div class="icons">
+						@@include('../img/svg/arrow-left.svg')
+						@@include('../img/svg/bell.svg')
+						@@include('../img/svg/big-arrow-down.svg')
+						@@include('../img/svg/big-arrow-up.svg')
+						@@include('../img/svg/browser 1.svg')
+						@@include('../img/svg/calendar-day.svg')
+						@@include('../img/svg/check-square.svg')
+						@@include('../img/svg/checkmark-square.svg')
+						@@include('../img/svg/chevron-double-right.svg')
+						@@include('../img/svg/chevron-down.svg')
+						@@include('../img/svg/chevron-up.svg')
+						@@include('../img/svg/clock.svg')
+						@@include('../img/svg/close.svg')
+						@@include('../img/svg/cloud-upload.svg')
+						@@include('../img/svg/cloud.svg')
+						@@include('../img/svg/computer 1.svg')
+						@@include('../img/svg/file-download.svg')
+						@@include('../img/svg/file-empty.svg')
+						@@include('../img/svg/hamburger-menu.svg')
+						@@include('../img/svg/Help.svg')
+						@@include('../img/svg/image-circle.svg')
+						@@include('../img/svg/Info.svg')
+						@@include('../img/svg/link.svg')
+						@@include('../img/svg/minus-circle.svg')
+						@@include('../img/svg/music-player 1.svg')
+						@@include('../img/svg/no.svg')
+						@@include('../img/svg/plus-circle.svg')
+						@@include('../img/svg/plus.svg')
+						@@include('../img/svg/programmer 1.svg')
+						@@include('../img/svg/question 1.svg')
+						@@include('../img/svg/settings 1.svg')
+						@@include('../img/svg/settings.svg')
+						@@include('../img/svg/shield 1.svg')
+						@@include('../img/svg/team.svg')
+						@@include('../img/svg/trash.svg')
+						@@include('../img/svg/unlink.svg')
+						@@include('../img/svg/user 1.svg')
+						@@include('../img/svg/yes.svg')
+					</div>
+					<div>
+						<p>Interface</p>
+						@@include('../img/svg/plus.svg')
+						@@include('../img/svg/chevron-down.svg')
+						@@include('../img/svg/chevron-up.svg')
+						@@include('../img/svg/Info.svg')
+					</div>
+					<div>
+						<p>Quotes</p>
+						@@include('../img/svg/quote big.svg')
+						@@include('../img/svg/quote small.svg')
+					</div>
+					<div>
+						<p>Infographics</p>
+						@@include('../img/svg/networking 1.svg')
+						@@include('../img/svg/music-player 1.svg')
+						@@include('../img/svg/programmer 1.svg')
+						@@include('../img/svg/computer 1.svg')
+						@@include('../img/svg/browser 1.svg')
+						@@include('../img/svg/question 1.svg')
+						@@include('../img/svg/settings 1.svg')
+						@@include('../img/svg/shield 1.svg')
+						@@include('../img/svg/user 1.svg')
+						@@include('../img/svg/yes.svg')
+						@@include('../img/svg/no.svg')
+					</div>
+				</div>
+			</div>
+		</section>
+	@@include('./components/footer.html')
+	<div onclick="o2.popups.closePopup();" class="overlay _overlay">
+		<div onclick="event.stopPropagation();" class="popup _standartPopup">
+			<h2 style="text-align: center; margin-top: 0px;">Popup title</h2>
+			<div onclick="o2.popups.closePopup();" class="popup-close _popupClose">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
