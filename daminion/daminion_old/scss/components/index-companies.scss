@@ -1,0 +1,59 @@
+.index-companies-list
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: relative;
+	.slick-arrow
+	{
+		top:50%;
+		margin-top: -15px;
+	}
+	.prevArrow
+	{
+		position: absolute;
+		left: -35px;
+		transform:rotate(180deg);
+	}
+	.nextArrow
+	{
+		position: absolute;
+		right: -35px;
+	}
+}
+.index-companies-item
+{
+	width: 185px;
+	height: 50px;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit:contain;
+	}
+}
+.index-clients-list
+{
+	.index-companies-item
+	{
+		margin-bottom:20px;
+	}
+}
+@media (max-width: 767px)
+{
+	.index-companies-list
+	{
+		.prevArrow
+		{
+			left: 0px;
+		}
+		.nextArrow
+		{
+			right: 0px;
+		}
+		.slick-list
+		{
+			width: 200px;
+			margin: 0 auto;
+		}
+	}
+}

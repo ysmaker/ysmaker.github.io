@@ -1,0 +1,16 @@
+.inner-top-page
+{
+	height: 350px;
+	display: flex;
+	align-items:center;
+	background-color: #d7d7d7;
+}
+@media (max-width: 767px)
+{
+	.inner-top-page
+	{
+		height: unset;
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+}

@@ -1,0 +1,168 @@
+.support-section
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	h1
+	{
+		margin-bottom: 70px;
+	}
+}
+.support-section-text
+{
+	margin-bottom: 30px;
+}
+.support-section-select
+{
+	position: relative;
+    width: 240px;
+	&:after
+	{
+		content:"";
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		margin-top: -4px;
+		width: 10px;
+		height: 8px;
+		background:url('../img/dropdown.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position:center;
+		transform:rotate(0deg);
+	}
+}
+.support-section-input
+{
+	margin-bottom: 20px;
+	button
+	{
+		width: 130px;
+		height: 50px;
+		text-transform: uppercase;
+	}
+	select
+	{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		padding-left: 14px;
+		position: relative;
+	}
+}
+.support-section-wr-top
+{
+	display: flex;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #d7d7d7;
+}
+.support-section-wr-img
+{
+	width: 200px;
+	margin-right: 20px;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit:contain;
+	}
+}
+.support-section-wr-text
+{
+	p
+	{
+		font-family: $medium;
+		color:#000000;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+}
+.support-section-docs
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.support-section-docs-title
+{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.support-section-docs-list
+{
+	display: flex;
+	flex-wrap:wrap;
+}
+.support-section-docs-item
+{
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	color: #000000;
+	text-decoration: underline;
+	width: 50%;
+	img
+	{
+		margin-right: 10px;
+	}
+}
+@media (max-width: 767px)
+{
+	.support-section h1
+	{
+		margin-bottom: 20px;
+	}
+	.support-section-docs-title
+	{
+		padding: 20px 20px;
+		margin-bottom: 0;
+	}
+	.support-section-select
+	{
+		width: 100%;
+	}
+	.support-section-input
+	{
+		text-align: center;
+		input
+		{
+			width: 100%;
+		}
+		select
+		{
+			width: 100%;
+		}
+	}
+	.support-section-wr-top
+	{
+		flex-direction:column;
+	}
+	.support-section-wr-img
+	{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.support-section-wr-text
+	{
+		p
+		{
+			text-align: center;
+		}
+	}
+	.support-section-docs
+	{
+		padding: 0px;
+	}
+	.support-section-docs-list
+	{
+		flex-direction:column;
+	}
+	.support-section-docs-item
+	{
+		width: 100%;
+		padding: 5px 20px;
+	}
+	.support-section
+	{
+		padding-bottom: 0px;
+		padding-top: 0;
+	}
+}
