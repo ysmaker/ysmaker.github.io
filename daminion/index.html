@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<!--[if IE 6]>		<html id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
-<!--[if IE 7]>		<html id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
-<!--[if IE 8]>		<html id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
-<!--[if IE 9]>		<html id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
-<meta name="viewport" content="width=device-width">
-<meta name="MobileOptimized" content="320"/>
-<meta name="HandheldFriendly" content="true"/>
+
 <meta charset="utf-8">
-<meta name="viewport min-width=320px" content="min-width=320, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<script type="text/javascript" src="js/main.min.js"></script>
-<!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-<![endif]-->
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/libs/flexibility.min.js"></script>
-<![endif]-->
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/libs/flexie.js"></script>
-<![endif]-->
+<script type="text/javascript" src="js/main.min.js" async=""></script>
 <title>index</title>
 </head>
 <body>
 	<header>
 	<div class="container">
-		<div class="header-wr">
-			<a href="#" class="header-wr-logo">
+		<div class="header__wr">
+			<div class="header__burger" onclick="o2.popupsFull.showPopup('.mobile-popup')">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.5 7C3.22386 7 3 6.77614 3 6.5C3 6.22386 3.22386 6 3.5 6H20.5C20.7761 6 21 6.22386 21 6.5C21 6.77614 20.7761 7 20.5 7H3.5ZM3.5 12C3.22386 12 3 11.7761 3 11.5C3 11.2239 3.22386 11 3.5 11H20.5C20.7761 11 21 11.2239 21 11.5C21 11.7761 20.7761 12 20.5 12H3.5ZM3.5 17C3.22386 17 3 16.7761 3 16.5C3 16.2239 3.22386 16 3.5 16H20.5C20.7761 16 21 16.2239 21 16.5C21 16.7761 20.7761 17 20.5 17H3.5Z" fill="#4D627C"/>
+</svg>
+
+			</div>
+			<a href="#" class="header__logo">
 				<svg width="210" height="55" viewBox="0 0 210 55" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M46.1262 7.87875L46.132 25.7004C46.132 26.7994 46.132 26.561 46.132 26.9971C46.132 37.5564 37.5662 46.1212 27.0058 46.1212C16.4454 46.1212 7.8796 37.5564 7.8796 26.9971C7.8796 16.432 16.4454 7.87294 27.0058 7.87294C31.2102 7.87294 35.1006 9.23355 38.2582 11.5303V2.44794C34.8273 0.878001 31.0183 0 27 0C12.0898 0 0 12.0885 0 27.0029C0 41.9115 12.0898 54 27 54C41.9102 54 54 41.9115 54 27.0029C54.0058 19.537 51.0168 12.763 46.1262 7.87875Z" fill="#153051"/>
 <path d="M27.5 16C21.1468 16 16 21.1468 16 27.5C16 33.8532 21.1468 39 27.5 39C33.8532 39 39 33.8532 39 27.5C39 21.1468 33.8532 16 27.5 16Z" fill="#153051"/>
@@ -64,13 +55,13 @@
 </svg>
 
 			</a>
-			<ul class="header-wr-menu">
-				<li class="header-wr-menu-item">
+			<ul class="header__menu">
+				<li class="menu__item">
 					<a href="#">Case Studies <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
 </svg>
 </a>
-					<ul class="header-wr-menu-dropdown">
+					<ul class="menu__dropdown">
 						<li>
 							<a href="#">
 								Marketing & Communications
@@ -108,10 +99,10 @@
 						</li>
 					</ul>
 				</li>
-				<li class="header-wr-menu-item">
+				<li class="menu__item">
 					<a href="#">Pricing</a>
 				</li>
-				<li class="header-wr-menu-item">
+				<li class="menu__item">
 					<a href="#">Contact Us</a>
 				</li>
 				<li>
@@ -122,18 +113,412 @@
 	</div>
 </header>
 	<section class="hero-block">
-	<div class="hero-block-wr">
+	<div class="hero-block__wr">
 		<div class="container">
-			<h1 class="hero-block-title">
+			<h1 class="hero-block__title title">
 				The easiest way to organize, unify, and secure
 				all the digital assets of your business
 			</h1>
-			<div class="hero-block-desc">
+			<div class="hero-block__desc">
 				Daminion is a Digital <a href="#">Asset Management solution for your team.</a><br>It increases productivity of marketing, design and sales teams by 30% average
 			</div>
-			<div class="hero-block-form">
+			<div class="hero-block__form">
 				<input type="text" class="input" placeholder="Your business e-mail">
-				<button class="button button_yellow">Book a Demo</button>
+				<button onclick="o2.popups.showPopup('.demo-popup')" class="button button_primary">Book a Demo</button>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="companies">
+	<div class="companies__static-wr">
+		<div class="companies__desktop">
+			<img src="./img/97.png" alt="phone">
+		</div>
+		<div class="companies__mobile">
+			<img src="./img/phone.png" alt="phone">
+		</div>
+	</div>
+	<div class="companies__background">
+		<div class="container">
+			<div class="companies__wr">
+				<h2>600+</h2>
+				<h3>companies use Daminion for growth</h3>
+				<div class="companies__img-wrapper">
+					<img src="./img/103.png" alt="">
+					<img src="./img/75.png" alt="">
+					<img src="./img/104.png" alt="">
+					<img src="./img/105.png" alt="">
+					<img src="./img/106.png" alt="">
+					<img src="./img/107.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<div class="search-banner container">
+	<h2>Just 2 clicks to find any file anytime</h2>
+	<h3>Daminion’s proprietary tagging system is <strong>100X faster</strong> Single, secure access point to all your digital assets.</h3>
+	<div class="search-banner__reletive">
+		<div class="search-banner__wr">
+			<div class="search-banner__input-wr">
+				<div class="search-banner__input">
+					<span>Categories: <strong>Vintage Cars</strong>, Color: <strong>Red</strong>, Media Format: <strong>JPEG</strong></span>
+				</div>
+				<div class="button button_primary">Search</div>
+			</div>
+		</div>
+		<img src="./img/Soft.png" alt="">
+	</div>
+</div>
+	<div class="needed">
+	<div class="container">
+		<h2>Who needs Daminion:</h2>
+		<h3>Daminion is universally useful. But a couple of specialized cases are described below for your convenience</h3>
+		<div class="needed__wrapper">
+			<div class="needed__tab-name">
+				<ul class="needed__tab-name-list">
+					<li id="1" onclick="o2.tabs(this, 1)" class="needed__tab-name-item needed__tab-name-item_active">Design</li>
+					<li id="2" onclick="o2.tabs(this, 2)" class="needed__tab-name-item">Marketing & Communications</li>
+					<li id="3" onclick="o2.tabs(this, 2)" class="needed__tab-name-item">Sales</li>
+					<li id="4" onclick="o2.tabs(this, 2)" class="needed__tab-name-item">GIS Specialists</li>
+					<li id="5" onclick="o2.tabs(this, 2)" class="needed__tab-name-item">Video & Photo Production</li>
+				</ul>
+			</div>
+			<div  class="needed__tabs">
+				<ul class="needed__tabs-wr active" data-id="1"> 
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.1</div>
+						<div class="needed__tabs-text">
+							<strong>Designers</strong> can increase a number of finished projects by 30% on average without extra effort.
+						</div>
+					</li>
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.2</div>
+						<div class="needed__tabs-text">
+							<strong>Quickly finding</strong> the existing assets that can be re-used saves time and money. No need to create duplicate content.
+						</div>
+					</li>
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.3</div>
+						<div class="needed__tabs-text">
+							<strong>Versioning</strong> helps to revert back to the best design and avoid document collisions. 
+						</div>
+					</li>
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.4</div>
+						<div class="needed__tabs-text">
+							Daminion makes communicating with other departments that much easier, natively.
+						</div>
+					</li>
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.5</div>
+						<div class="needed__tabs-text">
+							In a well-designed system like Daminion, you can quickly find 10x more inspirational material to easily start your designs.
+						</div>
+					</li>
+				</ul>
+
+				<ul class="needed__tabs-wr" data-id="2"> 
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.1</div>
+						<div class="needed__tabs-text">
+							<strong>Designers</strong> can increase a number of finished projects by 30% on average without extra effort.
+						</div>
+					</li>
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.4</div>
+						<div class="needed__tabs-text">
+							Daminion makes communicating with other departments that much easier, natively.
+						</div>
+					</li>
+					<li class="needed__tabs-item">
+						<div class="needed__tabs-number">.5</div>
+						<div class="needed__tabs-text">
+							In a well-designed system like Daminion, you can quickly find 10x more inspirational material to easily start your designs.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="deployment container">
+	<h2>Easy deployment & management <strong>for IT System Managers/Admins</strong></h2>
+	<div class="deployment__card-wrapper">
+		<div class="deployment__card">
+			<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M61.3335 32.1765V49.3824C61.3335 51.5753 59.5426 53.353 57.3335 53.353H6.66664C4.45751 53.353 2.66663 51.5753 2.66663 49.3824V17.6177C2.66663 15.4248 4.45751 13.6471 6.66664 13.6471H24V11H6.66664C2.98663 11.0045 0.00437501 13.9647 0 17.6177V49.3824C0.00437501 53.0353 2.98663 55.9957 6.66664 56H57.3334C61.0135 55.9957 63.9956 53.0353 64 49.3824V32.1765H61.3335Z" fill="#4D627C"/>
+				<path d="M46 61H19V64H46V61Z" fill="#4D627C"/>
+				<path d="M26 55H23V63H26V55Z" fill="#4D627C"/>
+				<path d="M42 55H39V63H42V55Z" fill="#4D627C"/>
+				<path d="M62.6782 13.2143H59.0404C58.9664 13.0306 58.8897 12.8482 58.8091 12.6646L61.3845 10.0905C61.9003 9.57448 61.9003 8.73802 61.3845 8.22192L55.7777 2.61506C55.2617 2.09921 54.4252 2.09921 53.9092 2.61506L51.335 5.19048C51.1513 5.10983 50.9689 5.03327 50.7853 4.95919V1.32147C50.7855 0.591669 50.1939 0 49.4641 0H41.5356C40.8058 0 40.2142 0.591669 40.2142 1.32147V4.95932C40.0305 5.03327 39.8481 5.10996 39.6645 5.19061L37.0904 2.61519C36.5744 2.09933 35.7379 2.09933 35.2218 2.61519L29.615 8.22204C29.0992 8.73802 29.0992 9.57448 29.615 10.0906L32.1904 12.6648C32.1098 12.8485 32.0332 13.0308 31.9591 13.2144H28.3215C27.5917 13.2144 27 13.8061 27 14.5359V22.4645C27 23.1943 27.5917 23.7859 28.3215 23.7859H31.9593C32.0332 23.9697 32.1099 24.152 32.1906 24.3356L29.6152 26.9098C29.0993 27.4258 29.0993 28.2622 29.6152 28.7783L35.222 34.3852C35.7379 34.901 36.5744 34.901 37.0905 34.3852L39.6646 31.8098C39.8484 31.8904 40.0307 31.967 40.2143 32.0411V35.6785C40.2143 36.4083 40.806 37 41.5358 37H49.4642C50.194 37 50.7857 36.4083 50.7857 35.6785V32.0407C50.9694 31.9667 51.1518 31.89 51.3354 31.8094L53.9095 34.3848C54.4255 34.9007 55.2619 34.9007 55.778 34.3848L61.3848 28.778C61.9007 28.262 61.9007 27.4255 61.3848 26.9094L58.8094 24.3352C58.8901 24.1515 58.9667 23.9692 59.0407 23.7856H62.6785C63.4083 23.7856 64 23.1939 64 22.4641V14.5355C63.9996 13.8059 63.408 13.2143 62.6782 13.2143ZM61.3568 21.1429H58.1088C57.5316 21.1429 57.0213 21.5174 56.8481 22.0679C56.6368 22.7322 56.3671 23.3765 56.042 23.9932C55.7741 24.5052 55.8698 25.1321 56.2785 25.5406L58.5818 27.8439L54.8435 31.5822L52.5402 29.2776C52.1317 28.8689 51.5048 28.773 50.9928 29.0411C50.3761 29.366 49.7318 29.6359 49.0676 29.8472C48.517 30.0204 48.1425 30.5307 48.1425 31.1078V34.3572H42.8568V31.1091C42.8568 30.5319 42.4823 30.0216 41.9318 29.8484C41.2676 29.6371 40.6232 29.3674 40.0066 29.0423C39.4945 28.7744 38.8677 28.8701 38.4591 29.2788L36.1559 31.5821L32.4176 27.8438L34.7222 25.5405C35.1309 25.1319 35.2268 24.5051 34.9587 23.9931C34.6336 23.3764 34.364 22.7321 34.1526 22.0678C33.9794 21.5173 33.4691 21.1428 32.892 21.1428H29.6427V15.8571H32.8907C33.4679 15.8571 33.9782 15.4826 34.1514 14.9321C34.3627 14.2678 34.6324 13.6235 34.9575 13.0068C35.2254 12.4948 35.1297 11.8679 34.721 11.4594L32.4178 9.15613L36.156 5.41781L38.4593 7.72242C38.8678 8.13111 39.4947 8.227 40.0067 7.95891C40.6234 7.63397 41.2677 7.36415 41.9319 7.1528C42.4825 6.97961 42.857 6.46934 42.857 5.89216V2.64281H48.1427V5.89216C48.1427 6.46934 48.5172 6.97961 49.0677 7.1528C49.732 7.36415 50.3763 7.63384 50.993 7.95891C51.505 8.22688 52.1318 8.13111 52.5404 7.72242L54.8436 5.41781L58.5819 9.15613L56.2773 11.4594C55.8686 11.8679 55.7727 12.4948 56.0408 13.0068C56.3657 13.6235 56.6356 14.2678 56.8469 14.9321C57.0201 15.4826 57.5304 15.8571 58.1075 15.8571H61.3568V21.1429Z" fill="#4D627C"/>
+				<path d="M45.5 12C41.9101 12 39 14.9101 39 18.5C39 22.0898 41.9101 25 45.5 25C49.0881 24.9957 51.9957 22.088 52 18.5C52 14.9101 49.0898 12 45.5 12ZM45.5 22.4C43.3461 22.4 41.6 20.6539 41.6 18.5C41.6 16.3461 43.3461 14.6 45.5 14.6C47.6539 14.6 49.4 16.3461 49.4 18.5C49.4 20.6539 47.6539 22.4 45.5 22.4Z" fill="#4D627C"/>
+				<path d="M37.0916 38.0572L31.2968 43.7813L18.7529 31.3904C18.2259 30.8699 17.3714 30.8699 16.8442 31.3904L11.8405 36.3331H7V38.9998H12.3993C12.7573 38.9997 13.1005 38.8592 13.3536 38.6092L17.7985 34.2185L30.3424 46.6094C30.5955 46.8595 30.9388 47 31.2967 47C31.6547 46.9999 31.9978 46.8594 32.2509 46.6094L39 39.9426L37.0916 38.0572Z" fill="#4D627C"/>
+				<path d="M9.20003 16C6.88043 16 5 17.8804 5 20.2V23H7.79997V20.2C7.79997 19.4268 8.42683 18.8 9.20003 18.8H12V16H9.20003Z" fill="#4D627C"/>
+				<path d="M18 16H15V19H18V16Z" fill="#4D627C"/>
+			</svg>	
+			<h3>Easy configuration</h3>
+			<span>
+				We support both Active Directory<br>
+				and built-in Daminion user management.
+			</span>
+		</div>
+		<div class="deployment__card">
+			<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M58.6665 5H50.6665V7.66661H58.6665C60.1393 7.66661 61.3331 8.86049 61.3331 10.3332V47.6665C61.3331 49.1392 60.1393 50.3331 58.6665 50.3331H5.33335C3.86061 50.3331 2.66674 49.1392 2.66674 47.6665V10.3334C2.66674 8.86061 3.86061 7.66674 5.33335 7.66674H13.3333V5H5.33335C2.38787 5 0 7.38774 0 10.3334V47.6666C0 50.6121 2.38787 52.9999 5.33335 52.9999H58.6665C61.612 52.9999 63.9999 50.6122 63.9999 47.6666V10.3334C63.9997 7.38774 61.612 5 58.6665 5Z" fill="#4D627C"/>
+				<path d="M50.0294 56H12.9706C10.7777 56 9 57.7909 9 60C9 62.2091 10.7777 64 12.9706 64H50.0294C52.2223 64 54 62.2091 54 60C54 57.7909 52.2223 56 50.0294 56ZM50.0294 61.3334H12.9706C12.2396 61.3334 11.647 60.7364 11.647 60C11.647 59.2636 12.2396 58.6666 12.9706 58.6666H50.0294C50.7604 58.6666 51.353 59.2636 51.353 60C51.3529 60.7364 50.7604 61.3334 50.0294 61.3334Z" fill="#4D627C"/>
+				<path d="M40.6428 51H24.3572C23.6077 51 23 51.597 23 52.3334V57.6666C23 58.403 23.6077 59 24.3572 59H40.6428C41.3923 59 42 58.403 42 57.6666V52.3334C42 51.5969 41.3923 51 40.6428 51ZM39.2856 56.3332H25.7144V53.6666H39.2858V56.3332H39.2856Z" fill="#4D627C"/>
+				<path d="M44.0001 43C43.6465 43.0001 43.3075 43.1318 43.0575 43.3662L40.7815 45.5H23.2187L20.9427 43.3662C20.6927 43.1317 20.3535 43 20 43H0V45.5H19.448L21.724 47.6338C21.974 47.8683 22.3132 48 22.6667 48H41.3333C41.687 47.9999 42.026 47.8682 42.276 47.6338L44.552 45.5H64V43H44.0001Z" fill="#4D627C"/>
+				<path d="M51.088 10.8188C45.7884 9.22331 40.979 6.29425 37.1134 2.3075C36.9411 2.11312 36.7581 1.92857 36.5651 1.75497C33.7411 -0.785952 29.4079 -0.538536 26.8866 2.3075C23.0209 6.29425 18.2116 9.22331 12.912 10.8188C12.3672 11.0016 11.9999 11.5154 12 12.094C12 12.3466 12.224 37.3563 31.6346 42.9476C31.7534 42.9825 31.8764 43.0001 32 43C32.1236 43.0001 32.2466 42.9825 32.3654 42.9476C51.776 37.3563 52 12.3466 52 12.0939C52.0001 11.5153 51.6327 11.0016 51.088 10.8188ZM32 40.256C16.9066 35.6295 14.9546 17.4125 14.7026 13.0346C20.071 11.2666 24.9301 8.2053 28.8586 4.11613C28.974 3.98436 29.0975 3.8599 29.2283 3.74362C30.9631 2.20093 33.6105 2.36759 35.1414 4.11613C39.0694 8.20681 43.9286 11.2695 49.2974 13.0386C49.0454 17.4125 47.0934 35.6295 32 40.256Z" fill="#4D627C"/>
+				<path d="M46.1828 14.4199C41.4509 12.5273 37.185 9.65623 33.6727 6L31.6862 7.78597C35.2146 11.4787 39.4671 14.425 44.1855 16.446C43.2958 22.0774 40.6131 30.8978 32.4926 34.2459C23.8908 30.6976 21.3869 20.9993 20.6652 15.4674L18 15.8069C18.8118 22.031 21.7121 33.0367 32.014 36.9125C32.1667 36.9703 32.3289 37 32.4924 37C32.6569 37.0004 32.82 36.9707 32.9736 36.9125C43.2755 33.0459 46.1826 22.027 46.989 15.8081C47.0655 15.2195 46.7362 14.6525 46.1828 14.4199Z" fill="#4D627C"/>
+				<path d="M8 37H5V40H8V37Z" fill="#4D627C"/>
+				<path d="M14 37H11V40H14V37Z" fill="#4D627C"/>
+				<path d="M8 32H5V35H8V32Z" fill="#4D627C"/>
+				<path d="M59 37H56V40H59V37Z" fill="#4D627C"/>
+				<path d="M54 37H51V40H54V37Z" fill="#4D627C"/>
+				<path d="M59 32H56V35H59V32Z" fill="#4D627C"/>
+			</svg>				
+			<h3>Company data is well protected with Scheduled Backups</h3>
+		</div>
+		<div class="deployment__card">
+			<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M32 35C27.5817 35 24 38.5817 24 43C24 47.4183 27.5817 51 32 51C36.4165 50.9956 39.9956 47.4165 40 43C40 38.5817 36.4183 35 32 35ZM32 48.3334C29.0545 48.3334 26.6666 45.9456 26.6666 43C26.6666 40.0545 29.0545 37.6666 32 37.6666C34.9455 37.6666 37.3334 40.0544 37.3334 43C37.3334 45.9456 34.9455 48.3334 32 48.3334Z" fill="#4D627C"/>
+				<path d="M35.4374 48H27.5624C23.9398 48.0044 21.0043 50.9866 21 54.6666V62.6666C21 63.403 21.5877 64 22.3125 64H40.6875C41.4123 64 42 63.403 42 62.6666V54.6666C41.9956 50.9866 39.06 48.0044 35.4374 48ZM39.3749 61.3334H23.625V54.6668C23.625 52.4576 25.3878 50.6668 27.5624 50.6668H35.4374C37.612 50.6668 39.3749 52.4576 39.3749 54.6668V61.3334Z" fill="#4D627C"/>
+				<path d="M53 28C48.5817 28 45 31.5817 45 36C45 40.4183 48.5817 44 53 44C57.4165 43.9956 60.9956 40.4165 61 36C61 31.5817 57.4183 28 53 28ZM53 41.3334C50.0545 41.3334 47.6666 38.9455 47.6666 36C47.6666 33.0545 50.0545 30.6666 53 30.6666C55.9455 30.6666 58.3334 33.0545 58.3334 36C58.3334 38.9455 55.9455 41.3334 53 41.3334Z" fill="#4D627C"/>
+				<path d="M57.4374 41H49.5624C45.9398 41.0044 43.0043 43.9866 43 47.6667H45.625C45.625 45.4575 47.3878 43.6666 49.5624 43.6666H57.4374C59.612 43.6666 61.3749 45.4575 61.3749 47.6667V54.3334H45.625V57H62.6875C63.4123 57 64 56.403 64 55.6666V47.6666C63.9956 43.9865 61.0599 41.0044 57.4374 41Z" fill="#4D627C"/>
+				<path d="M11 28C6.58175 28 3 31.5817 3 36C3 40.4183 6.58175 44 11 44C15.4165 43.9956 18.9956 40.4165 19 36C19 31.5817 15.4184 28 11 28ZM11 41.3334C8.0545 41.3334 5.66662 38.9455 5.66662 36C5.66662 33.0545 8.05437 30.6666 11 30.6666C13.9456 30.6666 16.3334 33.0545 16.3334 36C16.3334 38.9455 13.9455 41.3334 11 41.3334Z" fill="#4D627C"/>
+				<path d="M6.56248 43.6666H14.4375C16.6121 43.6666 18.375 45.4575 18.375 47.6666H21C20.9957 43.9865 18.06 41.0044 14.4375 41H6.56248C2.93997 41.0044 0.00430666 43.9865 0 47.6666V55.6666C0 56.403 0.587674 57 1.31255 57H18.3752V54.3334H2.62509V47.6666C2.62497 45.4575 4.38787 43.6666 6.56248 43.6666Z" fill="#4D627C"/>
+				<path d="M33.0358 0H3.96429C1.77489 0 0 1.79087 0 4V20C0 22.2091 1.77489 24 3.96429 24H16.6316L24.173 31.6094C24.4208 31.8594 24.7569 32 25.1072 32C25.2809 32.0006 25.453 31.9661 25.6133 31.8986C26.107 31.6921 26.4287 31.2059 26.4286 30.6666V24H33.0357C35.2251 24 37 22.2091 37 20V4C37.0001 1.79087 35.2252 0 33.0358 0ZM34.3572 20C34.3572 20.7364 33.7655 21.3334 33.0357 21.3334H25.1071C24.3773 21.3334 23.7856 21.9304 23.7856 22.6667V27.4481L18.1127 21.7241C17.865 21.474 17.5289 21.3335 17.1785 21.3335H3.96429C3.23449 21.3335 2.64282 20.7365 2.64282 20.0001V4C2.64282 3.26362 3.23449 2.66662 3.96429 2.66662H33.0358C33.7656 2.66662 34.3573 3.26362 34.3573 4V20H34.3572Z" fill="#4D627C"/>
+				<path d="M60 7H40V9.71423H60C60.7364 9.71423 61.3334 10.3219 61.3334 11.0714V16.5C61.3334 17.2495 60.7364 17.8572 60 17.8572H49.3334C48.9137 17.8572 48.5185 18.0583 48.2668 18.4001L46.6666 20.5714V19.2142C46.6666 18.4647 46.0696 17.8571 45.3332 17.8571H40V20.5714H44V24.6428C44 25.3923 44.597 26 45.3334 26C45.753 26 46.1483 25.7988 46.4 25.4571L50 20.5714H60C62.2091 20.5714 64 18.7486 64 16.5V11.0714C64 8.82285 62.2091 7 60 7Z" fill="#4D627C"/>
+				<path d="M58 12H45V15H58V12Z" fill="#4D627C"/>
+				<path d="M43 12H40V15H43V12Z" fill="#4D627C"/>
+				<path d="M9 8C6.79087 8 5 9.79087 5 12C5 14.2091 6.79087 16 9 16C11.2091 16 13 14.2091 13 12C13 9.79087 11.2091 8 9 8ZM9 13.3334C8.26363 13.3334 7.66663 12.7364 7.66663 12C7.66663 11.2636 8.26363 10.6666 9 10.6666C9.73637 10.6666 10.3334 11.2636 10.3334 12C10.3334 12.7364 9.73637 13.3334 9 13.3334Z" fill="#4D627C"/>
+				<path d="M19 8C16.7909 8 15 9.79087 15 12C15 14.2091 16.7909 16 19 16C21.2091 16 23 14.2091 23 12C23 9.79087 21.2091 8 19 8ZM19 13.3334C18.2636 13.3334 17.6666 12.7364 17.6666 12C17.6666 11.2636 18.2636 10.6666 19 10.6666C19.7364 10.6666 20.3334 11.2636 20.3334 12C20.3334 12.7364 19.7364 13.3334 19 13.3334Z" fill="#4D627C"/>
+				<path d="M28 8C25.7909 8 24 9.79087 24 12C24 14.2091 25.7909 16 28 16C30.2091 16 32 14.2091 32 12C32 9.79087 30.2091 8 28 8ZM28 13.3334C27.2636 13.3334 26.6666 12.7364 26.6666 12C26.6666 11.2636 27.2636 10.6666 28 10.6666C28.7364 10.6666 29.3334 11.2636 29.3334 12C29.3334 12.7364 28.7364 13.3334 28 13.3334Z" fill="#4D627C"/>
+			</svg>
+				
+			<h3>
+				Your involvment is not needed<br>
+				to add or remove users: catalog admin can do it easily.
+			</h3>
+		</div>
+	</div>
+	<div class="deployment__link">
+		<div class="svg_link">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 12H18.5C18.7761 12 19 12.2239 19 12.5C19 12.7761 18.7761 13 18.5 13H13V18.5C13 18.7761 12.7761 19 12.5 19C12.2239 19 12 18.7761 12 18.5V13H6.5C6.22386 13 6 12.7761 6 12.5C6 12.2239 6.22386 12 6.5 12H12V6.5C12 6.22386 12.2239 6 12.5 6C12.7761 6 13 6.22386 13 6.5V12Z" fill="#4D627C"/>
+</svg>
+
+			<a href="#">
+				Click here
+			</a>
+		</div>
+		<span>to expand all the benefits</span>
+	</div>
+</div>
+	<section class="client-quotes">
+	<div class="container">
+		<div class="client-quotes__wr">
+			<div class="client-quotes__svg">
+				<svg width="70" height="58" viewBox="0 0 70 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5909 57.6839C10.8182 57.6839 7 55.9455 4.13636 52.4687C1.37879 48.8865 0 44.6721 0 39.8256C0 35.822 0.742424 32.0817 2.22727 28.6049C3.71212 25.1281 5.56818 21.9673 7.79545 19.1226C10.1288 16.2779 12.5682 13.802 15.1136 11.6948C17.7652 9.48229 20.2045 7.63851 22.4318 6.16349C24.6591 4.58311 26.4621 3.42416 27.8409 2.68665C29.3258 1.94914 30.0152 1.58038 29.9091 1.58038L33.5682 6.47956C32.6136 6.901 31.3409 7.74387 29.75 9.00817C28.1591 10.1671 26.5682 11.5895 24.9773 13.2752C23.4924 14.9609 22.1667 16.8047 21 18.8065C19.8333 20.703 19.25 22.5468 19.25 24.3379C19.25 25.3915 19.8864 26.445 21.1591 27.4986C22.4318 28.4469 23.8106 29.6058 25.2955 30.9755C26.7803 32.2398 28.1591 33.8202 29.4318 35.7166C30.7045 37.5077 31.3409 39.7203 31.3409 42.3542C31.3409 44.6721 30.8636 46.7793 29.9091 48.6757C29.0606 50.5722 27.8939 52.2053 26.4091 53.5749C25.0303 54.8392 23.3864 55.8401 21.4773 56.5777C19.5682 57.3152 17.6061 57.6839 15.5909 57.6839ZM54.7273 58C52.2879 58 50.0606 57.4732 48.0455 56.4196C46.0303 55.366 44.2803 53.9437 42.7955 52.1526C41.3106 50.3615 40.1439 48.307 39.2955 45.9891C38.553 43.5658 38.1818 40.9846 38.1818 38.2452C38.1818 32.7666 39.3485 27.7094 41.6818 23.0736C44.1212 18.3324 46.7727 14.2761 49.6364 10.9046C53.0303 6.901 56.9015 3.26612 61.25 0L65.8636 4.26703C64.9091 4.89918 63.7424 5.90009 62.3636 7.26975C61.0909 8.63942 59.8712 10.2725 58.7045 12.1689C57.6439 13.96 56.6894 15.8565 55.8409 17.8583C55.0985 19.8601 54.7273 21.8093 54.7273 23.7057C54.7273 24.97 55.5227 26.0236 57.1136 26.8665C58.7045 27.7094 60.4545 28.7629 62.3636 30.0272C64.2727 31.2916 66.0227 32.9246 67.6136 34.9264C69.2045 36.8229 70 39.5095 70 42.9864C70 45.0936 69.5758 47.0427 68.7273 48.8338C67.8788 50.6249 66.7121 52.2053 65.2273 53.5749C63.8485 54.9446 62.2045 56.0509 60.2955 56.8937C58.4924 57.6312 56.6364 58 54.7273 58Z" fill="#153051"/>
+</svg>
+
+			</div>
+			<div class="client-quotes__text text">
+				Daminion helps us to catalog a large amount of hi-res images and videos and organize them in a quick and easy way to be able to retrieve them as we need it. <br><br>
+				Instead of having pics spread across different locations without tags, Daminion giv
+				es us a central access point to them and helps to track and find them quickly.”
+			</div>
+			<div class="client-quotes__face">
+				<div class="client-quotes__img">
+					<img src="./img/phil.png" alt="">
+				</div>
+				<a href="#" class="client-quotes__name">
+					Phil Lyndeman
+				</a>
+				<div class="client-quotes__prof">
+					Odyssey Marine Exploration (NASDAQ: OMEX)
+				</div>
+				<div class="client-quotes__desc">
+					The largest American company engaged in the salvage of deep-water shipwrecks.
+				</div>
+				<div class="client-quotes__img">
+					<img src="./img/odyssey.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="calculate">
+	<div class="container">
+		<div class="calculate__title title">
+			Calculate Your <br> Return on Investment (ROI)
+		</div>
+		<div class="calculate__list">
+			<div class="calculate__item">
+				<div class="calculate__item-col">
+					<div class="calculate__item-title">Number of people</div>
+					<div class="calculate__item-desc">who work with your digital assets</div>
+				</div>
+				<div class="calculate__item-range">
+					<div class="daminion_range"></div>
+				</div>
+				<div class="calculate__item-col calculate__item-col--reverse">
+					<div class="calculate__item-number">10</div>
+					<div class="calculate__item-desc">(designers, marketers,  etc...)</div>
+				</div>
+			</div>
+			<div class="calculate__item">
+				<div class="calculate__item-col">
+					<div class="calculate__item-title">Average Annual Salary</div>
+				</div>
+				<div class="calculate__item-range">
+					<div class="daminion_range"></div>
+				</div>
+				<div class="calculate__item-col">
+					<div class="calculate__item-number">$75.000 USD</div>
+				</div>
+			</div>
+		</div>
+		<div class="calculate__bot">
+			<a href="#" class="button button_primary">Calculate your Daminion ROI</a>
+			<div class="svg_link">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 12H18.5C18.7761 12 19 12.2239 19 12.5C19 12.7761 18.7761 13 18.5 13H13V18.5C13 18.7761 12.7761 19 12.5 19C12.2239 19 12 18.7761 12 18.5V13H6.5C6.22386 13 6 12.7761 6 12.5C6 12.2239 6.22386 12 6.5 12H12V6.5C12 6.22386 12.2239 6 12.5 6C12.7761 6 13 6.22386 13 6.5V12Z" fill="#4D627C"/>
+</svg>
+
+				<a href="#">
+					Open advanced calculator
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="client-quotes">
+		<div class="container">
+			<div class="client-quotes__wr">
+				<div class="client-quotes__svg">
+					<svg width="70" height="58" viewBox="0 0 70 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5909 57.6839C10.8182 57.6839 7 55.9455 4.13636 52.4687C1.37879 48.8865 0 44.6721 0 39.8256C0 35.822 0.742424 32.0817 2.22727 28.6049C3.71212 25.1281 5.56818 21.9673 7.79545 19.1226C10.1288 16.2779 12.5682 13.802 15.1136 11.6948C17.7652 9.48229 20.2045 7.63851 22.4318 6.16349C24.6591 4.58311 26.4621 3.42416 27.8409 2.68665C29.3258 1.94914 30.0152 1.58038 29.9091 1.58038L33.5682 6.47956C32.6136 6.901 31.3409 7.74387 29.75 9.00817C28.1591 10.1671 26.5682 11.5895 24.9773 13.2752C23.4924 14.9609 22.1667 16.8047 21 18.8065C19.8333 20.703 19.25 22.5468 19.25 24.3379C19.25 25.3915 19.8864 26.445 21.1591 27.4986C22.4318 28.4469 23.8106 29.6058 25.2955 30.9755C26.7803 32.2398 28.1591 33.8202 29.4318 35.7166C30.7045 37.5077 31.3409 39.7203 31.3409 42.3542C31.3409 44.6721 30.8636 46.7793 29.9091 48.6757C29.0606 50.5722 27.8939 52.2053 26.4091 53.5749C25.0303 54.8392 23.3864 55.8401 21.4773 56.5777C19.5682 57.3152 17.6061 57.6839 15.5909 57.6839ZM54.7273 58C52.2879 58 50.0606 57.4732 48.0455 56.4196C46.0303 55.366 44.2803 53.9437 42.7955 52.1526C41.3106 50.3615 40.1439 48.307 39.2955 45.9891C38.553 43.5658 38.1818 40.9846 38.1818 38.2452C38.1818 32.7666 39.3485 27.7094 41.6818 23.0736C44.1212 18.3324 46.7727 14.2761 49.6364 10.9046C53.0303 6.901 56.9015 3.26612 61.25 0L65.8636 4.26703C64.9091 4.89918 63.7424 5.90009 62.3636 7.26975C61.0909 8.63942 59.8712 10.2725 58.7045 12.1689C57.6439 13.96 56.6894 15.8565 55.8409 17.8583C55.0985 19.8601 54.7273 21.8093 54.7273 23.7057C54.7273 24.97 55.5227 26.0236 57.1136 26.8665C58.7045 27.7094 60.4545 28.7629 62.3636 30.0272C64.2727 31.2916 66.0227 32.9246 67.6136 34.9264C69.2045 36.8229 70 39.5095 70 42.9864C70 45.0936 69.5758 47.0427 68.7273 48.8338C67.8788 50.6249 66.7121 52.2053 65.2273 53.5749C63.8485 54.9446 62.2045 56.0509 60.2955 56.8937C58.4924 57.6312 56.6364 58 54.7273 58Z" fill="#153051"/>
+</svg>
+
+				</div>
+				<div class="client-quotes__text text">
+					“Daminion has helped our business become significantly more efficient. Each employee spends less time searching through folders and more time growing the company. <br><br>
+As a systems director, it gives me a nice clean feeling to know all our media is properly organized and able to be located within a few short clicks”
+				</div>
+				<div class="client-quotes__face">
+					<div class="client-quotes__img">
+						<img src="../img/kedar.png" alt="">
+					</div>
+					<a href="#" class="client-quotes__name">
+						Kedar Tilak
+					</a>
+					<div class="client-quotes__prof">
+						System Director at Almex USA
+					</div>
+					<div class="client-quotes__desc">
+						The leading supplier of commercial and aerospace aluminum billet and stab casting technology and equipmen
+					</div>
+					<div class="client-quotes__img">
+						<img src="../img/almex.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="questions">
+	<div class="container container--fullwidth">
+		<div class="questions__wr">
+			<div class="questions__title title">
+				Frequently Asked Questions
+			</div>
+			<div class="questions__list">
+				<div class="questions__item">
+					<div class="questions__item-svg">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 0C10.767 0 0 10.767 0 24C0 37.233 10.767 48 24 48C37.233 48 48 37.233 48 24C48 10.767 37.233 0 24 0ZM24 45C12.42 45 3 35.58 3 24C3 12.42 12.42 3 24 3C35.58 3 45 12.42 45 24C45 35.58 35.58 45 24 45Z" fill="#2F74C8"/>
+<path d="M24 9C19.0365 9 15 13.037 15 17.9981H18C18 14.6902 20.691 12.0004 24 12.0004C27.309 12.0004 30 14.6917 30 18.0011C30 21.3105 27.309 24.0019 24 24.0019C23.172 24.0019 22.5 24.674 22.5 25.5021V33H25.5V26.8762C29.751 26.1591 33 22.4522 33 17.9996C33 13.037 28.9635 9 24 9Z" fill="#2F74C8"/>
+<path d="M26 36H23V39H26V36Z" fill="#2F74C8"/>
+</svg>
+
+					</div>
+					<div class="questions__item-title active" onclick="o2.spoiler.toggle(this);">
+						Who will be tagging all our files and how long will it take?
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
+</svg>
+
+					</div>
+					<div class="questions__item-answer questions__item-answer--show">
+						<ul>
+							<li>Daminion’s AI can do it for you automatically.</li>
+							<li>Daminion auto-imports ALL the existing tags and metadata from your files, giving you a jump-start</li>
+							<li>Your team can add to it manually using the easy Daminion tagging</li>
+							<li>Daminion offers an optional tagging service by our experts</li>
+						</ul>
+						<div class="quote">
+							<svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.45909 23.8692C4.48182 23.8692 2.9 23.1499 1.71364 21.7112C0.571212 20.2289 0 18.485 0 16.4796C0 14.8229 0.307576 13.2752 0.922727 11.8365C1.53788 10.3978 2.30682 9.08992 3.22955 7.91281C4.19621 6.73569 5.20682 5.71117 6.26136 4.83924C7.35985 3.92371 8.37045 3.16076 9.29318 2.55041C10.2159 1.89646 10.9629 1.41689 11.5341 1.11172C12.1492 0.80654 12.4348 0.653951 12.3909 0.653951L13.9068 2.6812C13.5114 2.85559 12.9841 3.20436 12.325 3.72752C11.6659 4.20708 11.0068 4.79564 10.3477 5.49319C9.73258 6.19074 9.18333 6.95368 8.7 7.78202C8.21667 8.56676 7.975 9.3297 7.975 10.0708C7.975 10.5068 8.23864 10.9428 8.76591 11.3787C9.29318 11.7711 9.86439 12.2507 10.4795 12.8174C11.0947 13.3406 11.6659 13.9946 12.1932 14.7793C12.7205 15.5204 12.9841 16.436 12.9841 17.5259C12.9841 18.485 12.7864 19.3569 12.3909 20.1417C12.0394 20.9264 11.5561 21.6022 10.9409 22.1689C10.3697 22.6921 9.68864 23.1063 8.89773 23.4114C8.10682 23.7166 7.29394 23.8692 6.45909 23.8692ZM22.6727 24C21.6621 24 20.7394 23.782 19.9045 23.3461C19.0697 22.9101 18.3447 22.3215 17.7295 21.5804C17.1144 20.8392 16.6311 19.9891 16.2795 19.03C15.972 18.0272 15.8182 16.9591 15.8182 15.8256C15.8182 13.5586 16.3015 11.4659 17.2682 9.54768C18.2788 7.58583 19.3773 5.90736 20.5636 4.51226C21.9697 2.85559 23.5735 1.3515 25.375 0L27.2864 1.76567C26.8909 2.02725 26.4076 2.44142 25.8364 3.00817C25.3091 3.57493 24.8038 4.25068 24.3205 5.03542C23.8811 5.77657 23.4856 6.56131 23.1341 7.38965C22.8265 8.21798 22.6727 9.02452 22.6727 9.80926C22.6727 10.3324 23.0023 10.7684 23.6614 11.1172C24.3205 11.4659 25.0455 11.9019 25.8364 12.4251C26.6273 12.9482 27.3523 13.624 28.0114 14.4523C28.6705 15.2371 29 16.3488 29 17.7875C29 18.6594 28.8242 19.4659 28.4727 20.2071C28.1212 20.9482 27.6379 21.6022 27.0227 22.1689C26.4515 22.7357 25.7705 23.1935 24.9795 23.5422C24.2326 23.8474 23.4636 24 22.6727 24Z" fill="#2F74C8"/>
+</svg>
+
+							For every minute spent organizing, an hour is earned.
+							<span>— Benjamin Franklin</span>
+						</div>
+						<p>For a team of 20 people every single minute invested in organizing will save your company 20 hours.</p>
+					</div>
+				</div>
+				<div class="questions__item">
+					<div class="questions__item-svg">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 0C10.767 0 0 10.767 0 24C0 37.233 10.767 48 24 48C37.233 48 48 37.233 48 24C48 10.767 37.233 0 24 0ZM24 45C12.42 45 3 35.58 3 24C3 12.42 12.42 3 24 3C35.58 3 45 12.42 45 24C45 35.58 35.58 45 24 45Z" fill="#2F74C8"/>
+<path d="M24 9C19.0365 9 15 13.037 15 17.9981H18C18 14.6902 20.691 12.0004 24 12.0004C27.309 12.0004 30 14.6917 30 18.0011C30 21.3105 27.309 24.0019 24 24.0019C23.172 24.0019 22.5 24.674 22.5 25.5021V33H25.5V26.8762C29.751 26.1591 33 22.4522 33 17.9996C33 13.037 28.9635 9 24 9Z" fill="#2F74C8"/>
+<path d="M26 36H23V39H26V36Z" fill="#2F74C8"/>
+</svg>
+
+					</div>
+					<div class="questions__item-title" onclick="o2.spoiler.toggle(this);">
+						Can this system be used with an existing photo directory structure without moving files? We want to layer it on top of a shared folder.
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
+</svg>
+
+					</div>
+					<div class="questions__item-answer">
+						123
+					</div>
+				</div>
+			</div>
+			<div class="questions__bot">
+				<div class="svg_link">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 12H18.5C18.7761 12 19 12.2239 19 12.5C19 12.7761 18.7761 13 18.5 13H13V18.5C13 18.7761 12.7761 19 12.5 19C12.2239 19 12 18.7761 12 18.5V13H6.5C6.22386 13 6 12.7761 6 12.5C6 12.2239 6.22386 12 6.5 12H12V6.5C12 6.22386 12.2239 6 12.5 6C12.7761 6 13 6.22386 13 6.5V12Z" fill="#4D627C"/>
+</svg>
+
+					<a href="#">
+						Open advanced calculator
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+	<section class="book-demo">
+	<div class="container">
+		<div class="book-demo__row">
+			<div class="book-demo__left">
+				<div class="book-demo__img">
+					<img src="../img/book-demo.png" alt="">
+				</div>
+			</div>
+			<div class="book-demo__right">
+				<div class="book-demo__title">Book a Free online <br> Demo of Daminion now</div>
+				<div class="book-demo__form hero-block__form">
+					<input type="text" class="input" placeholder="Your business e-mail">
+					<button class="button button_primary">Book a Demo</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -148,10 +533,10 @@
 					</div>
 					<ul>
 						<li>
-							<button class="button button_blue">Get Pricing</button>
+							<button class="button button_system">Get Pricing</button>
 						</li>
 						<li>
-							<button class="button button_yellow">Book a Demo</button>
+							<button class="button button_primary">Book a Demo</button>
 						</li>
 						<li>
 							<a href="#">
@@ -173,8 +558,11 @@
 			</div>
 			<div class="footer-nav-item">
 				<div class="footer-nav-list">
-					<div class="footer-nav-title">
-						Features
+					<div class="footer-nav-title" onclick="o2.spoiler.toggle(this);">
+						Features <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
+</svg>
+</span>
 					</div>
 					<ul>
 						<li>
@@ -222,8 +610,11 @@
 			</div>
 			<div class="footer-nav-item">
 				<div class="footer-nav-list">
-					<div class="footer-nav-title">
-						Case Studies
+					<div class="footer-nav-title" onclick="o2.spoiler.toggle(this);">
+						Case Studies <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
+</svg>
+</span>
 					</div>
 					<ul>
 						<li>
@@ -266,8 +657,11 @@
 			</div>
 			<div class="footer-nav-item">
 				<div class="footer-nav-list">
-					<div class="footer-nav-title">
-						Resources
+					<div class="footer-nav-title" onclick="o2.spoiler.toggle(this);">
+						Resources <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
+</svg>
+</span>
 					</div>
 					<ul>
 						<li>
@@ -295,8 +689,11 @@
 			</div>
 			<div class="footer-nav-item">
 				<div class="footer-nav-list">
-					<div class="footer-nav-title">
-						About
+					<div class="footer-nav-title" onclick="o2.spoiler.toggle(this);">
+						About <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
+</svg>
+</span>
 					</div>
 					<ul>
 						<li>
@@ -330,7 +727,7 @@
 		</div>
 		<div class="footer-copyrights">
 			<div class="footer-copyrights-text">Copyright © 2020 Daminion Software. All Rights Reserved</div>
-			<div class="footer-copyrights-logo">
+			<a href="#" class="footer-copyrights-logo">
 				<svg width="110" height="29" viewBox="0 0 110 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24.1613 4.15376L24.1644 13.5507C24.1644 14.1301 24.1644 14.0044 24.1644 14.2343C24.1644 19.802 19.6775 24.318 14.1459 24.318C8.61425 24.318 4.12741 19.802 4.12741 14.2343C4.12741 8.66366 8.61425 4.1507 14.1459 4.1507C16.3482 4.1507 18.386 4.86811 20.04 6.07913V1.29024C18.2428 0.462458 16.2477 -0.000488281 14.1429 -0.000488281C6.33276 -0.000488281 0 6.37345 0 14.2374C0 22.0983 6.33276 28.4722 14.1429 28.4722C21.9529 28.4722 28.2857 22.0983 28.2857 14.2374C28.2888 10.3008 26.7231 6.72909 24.1613 4.15376Z" fill="#F0F5FB"/>
 <path d="M14.4048 8.43604C11.0769 8.43604 8.38098 11.1498 8.38098 14.4997C8.38098 17.8496 11.0769 20.5633 14.4048 20.5633C17.7327 20.5633 20.4286 17.8496 20.4286 14.4997C20.4286 11.1498 17.7327 8.43604 14.4048 8.43604Z" fill="#F0F5FB"/>
@@ -366,9 +763,101 @@
 <path d="M96.9048 13.7088V4.74512H98.5918L98.8646 6.05859C99.6918 5.18192 100.635 4.74512 101.693 4.74512C103.739 4.74512 104.762 5.84942 104.762 8.05803V13.7088H102.583V8.05803C102.583 7.06754 102.108 6.5723 101.159 6.5723C100.451 6.5723 99.76 6.86452 99.087 7.45205V13.7088H96.9048Z" fill="#F0F5FB"/>
 </svg>
 
-			</div>
+			</a>
 		</div>
 	</div>
 </footer>
+	<div onclick="o2.popups.closePopup();" class="overlay _overlay">
+	<div onclick="event.stopPropagation();" class="popup mobile-popup _standartPopup">
+		<ul class="mobile-popup__list">
+			<li class="mobile-popup__item">
+				<a href="#" onclick="o2.spoiler.toggle(this);">Case Studies <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.1746 10.1204C15.3843 9.94067 15.6999 9.96495 15.8796 10.1746C16.0593 10.3843 16.0351 10.6999 15.8254 10.8796L12.3254 13.8796C12.1382 14.0401 11.8619 14.0401 11.6746 13.8796L8.17461 10.8796C7.96495 10.6999 7.94067 10.3843 8.12038 10.1746C8.30009 9.96495 8.61574 9.94067 8.8254 10.1204L12 12.8415L15.1746 10.1204Z" fill="#4D627C"/>
+</svg>
+</span></a>
+				<ul class="mobile-popup__dropdown">
+					<li>
+						<a href="#">
+							Marketing & Communications
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Design & Production
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Video Production
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Sales
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							GIS Specialists
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Benefits for IT Managers
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Testimonials
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mobile-popup__item">
+				<a href="#">Pricing</a>
+			</li>
+			<li class="mobile-popup__item">
+				<a href="#">Contact Us</a>
+			</li>
+		</ul>
+		<div class="mobile-popup__button">
+			<button class="button button_default">
+				Book a Demo
+			</button>
+		</div>
+	</div>
+	<div onclick="event.stopPropagation();" class="popup demo-popup _standartPopup">
+		<div class="demo-popup__header">
+			<div class="demo-popup__title">
+				Book a Demo
+			</div>
+			<div onclick="o2.popups.closePopup();" class="popup-close _popupClose">
+				<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 32C7.17725 32 0 24.8228 0 16C0 7.17725 7.17725 0 16 0C24.8228 0 32 7.17725 32 16C32 24.8228 24.8228 32 16 32ZM16 2C8.28003 2 2 8.28003 2 16C2 23.72 8.28003 30 16 30C23.72 30 30 23.72 30 16C30 8.28003 23.72 2 16 2Z" fill="#CDD9E8"/>
+<path d="M11.0081 22C10.7499 22 10.4916 21.902 10.2954 21.7043C9.90153 21.3105 9.90153 20.6719 10.2954 20.278L20.278 10.2954C20.6721 9.90153 21.3107 9.90153 21.7046 10.2954C22.0985 10.6893 22.0985 11.3279 21.7046 11.722L11.7218 21.7043C11.5229 21.902 11.2649 22 11.0081 22Z" fill="#CDD9E8"/>
+<path d="M20.9905 22C20.7325 22 20.4743 21.902 20.2781 21.7043L10.2956 11.7221C9.90147 11.3282 9.90147 10.6895 10.2956 10.2956C10.6895 9.90146 11.3281 9.90146 11.7219 10.2956L21.7044 20.2791C22.0985 20.673 22.0985 21.3116 21.7044 21.7055C21.507 21.902 21.2487 22 20.9905 22Z" fill="#CDD9E8"/>
+</svg>
+
+			</div>
+		</div>
+		<div class="demo-popup__form">
+			<div class="demo-popup__item">
+				<div class="demo-popup__item-title">Your name</div>
+				<input type="text" class="input input__default" placeholder="Jonh Doe">
+			</div>
+			<div class="demo-popup__item">
+				<div class="demo-popup__item-title">Telephone Number</div>
+				<input type="text" class="input input__default _phone-mask" placeholder="+">
+			</div>
+			<div class="demo-popup__item">
+				<div class="demo-popup__item-title">Comment</div>
+				<textarea class="textarea" rows="4" placeholder="Tell us about"></textarea>
+			</div>
+			<button class="button button_primary">
+				Book a Daminion Demo
+			</button>
+		</div>
+	</div>
+</div>
 </body>
 </html>

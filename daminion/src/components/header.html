@@ -1,13 +1,16 @@
 <header>
 	<div class="container">
-		<div class="header-wr">
-			<a href="#" class="header-wr-logo">
+		<div class="header__wr">
+			<div class="header__burger" onclick="o2.popupsFull.showPopup('.mobile-popup')">
+				@@include('../../img/svg/hamburger-menu.svg')
+			</div>
+			<a href="#" class="header__logo">
 				@@include('../../img/svg/logo.svg')
 			</a>
-			<ul class="header-wr-menu">
-				<li class="header-wr-menu-item">
+			<ul class="header__menu">
+				<li class="menu__item">
 					<a href="#">Case Studies @@include('../../img/svg/chevron-down.svg')</a>
-					<ul class="header-wr-menu-dropdown">
+					<ul class="menu__dropdown">
 						<li>
 							<a href="#">
 								Marketing & Communications
@@ -45,10 +48,10 @@
 						</li>
 					</ul>
 				</li>
-				<li class="header-wr-menu-item">
+				<li class="menu__item">
 					<a href="#">Pricing</a>
 				</li>
-				<li class="header-wr-menu-item">
+				<li class="menu__item">
 					<a href="#">Contact Us</a>
 				</li>
 				<li>

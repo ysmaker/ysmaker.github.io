@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	@@include('./components/pagehead.html')
+@@include('./components/pagehead.html')
 </head>
 <body>
 	@@include('./components/header.html')
 	@@include('./components/hero-block.html')
+	@@include('./components/companies.html')
+	@@include('./components/search-banner.html')
+	@@include('./components/needed.html')
+	@@include('./components/deployment.html')
+	@@include('./components/client-quotes.html')
+	@@include('./components/сalculate-investment.html')
+	<section class="client-quotes">
+		<div class="container">
+			<div class="client-quotes__wr">
+				<div class="client-quotes__svg">
+					@@include('../img/svg/quote-big.svg')
+				</div>
+				<div class="client-quotes__text text">
+					“Daminion has helped our business become significantly more efficient. Each employee spends less time searching through folders and more time growing the company. <br><br>
+As a systems director, it gives me a nice clean feeling to know all our media is properly organized and able to be located within a few short clicks”
+				</div>
+				<div class="client-quotes__face">
+					<div class="client-quotes__img">
+						<img src="../img/kedar.png" alt="">
+					</div>
+					<a href="#" class="client-quotes__name">
+						Kedar Tilak
+					</a>
+					<div class="client-quotes__prof">
+						System Director at Almex USA
+					</div>
+					<div class="client-quotes__desc">
+						The leading supplier of commercial and aerospace aluminum billet and stab casting technology and equipmen
+					</div>
+					<div class="client-quotes__img">
+						<img src="../img/almex.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	@@include('./components/questions.html')
+	<!-- @@include('./components/users-say.html') -->
+	@@include('./components/book-demo.html')
 	@@include('./components/footer.html')
+	@@include('./components/overlay.html')
 </body>
 </html>

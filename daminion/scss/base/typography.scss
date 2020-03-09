@@ -6,6 +6,7 @@ body
 	min-width: 320px;
 	margin-bottom: 446px;
 	color: $accent-color;
+	margin-top: 139px;
 }
 html
 {
@@ -119,4 +120,8 @@ a:focus
 	letter-spacing: 0;
 	line-height: 25px;
 	margin: 0;
+}
+.display-none
+{
+	display: none!important;
 }

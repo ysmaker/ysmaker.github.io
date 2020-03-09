@@ -5,14 +5,13 @@
 	align-items:center;
 	justify-content:center;
 }
-.hero-block-title
+.hero-block__title
 {
-	font-family: $black;
 	text-align: center;
 	padding: 0 110px;
 	margin-bottom: 50px;
 }
-.hero-block-desc
+.hero-block__desc
 {
 	font-family: $light;
 	text-align: center;
@@ -25,12 +24,33 @@
 		color: $blue;
 	}
 }
-.hero-block-form
+.hero-block__form
 {
 	text-align: center;
 	.button
 	{
 		width: 171px;
 		margin-left: -0.5em;
+	}
+}
+@media (max-width: 991px)
+{
+	.hero-block__title
+	{
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.hero-block__desc
+	{
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.hero-block__form
+	{
+		.input
+		{
+			width: 100%;
+		}
 	}
 }

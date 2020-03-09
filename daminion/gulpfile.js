@@ -35,6 +35,7 @@ gulp.task('scripts', function() {
 		// 'js/vendors/input-mask.min.js',
 		// 'js/vendors/slick.min.js',
 		// 'js/vendors/object-fit-polyfill.js',
+		'js/slick-1.9.min.js',
 		'js/main.js',
 		])
 		.pipe(concat('main.min.js')) // Собираем их в кучу в новом файле libs.min.js

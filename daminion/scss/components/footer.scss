@@ -1,7 +1,6 @@
 footer
 {
-	background-color: gray;
-	background: #192633;
+	background: linear-gradient(0deg, #1A2430, #1A2430), #4D627C;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -19,14 +18,48 @@ footer
 }
 .footer-nav-title
 {
+	position: relative;
 	font-family: $bold;
 	color: #FFFFFF;
 	font-size: 20px;
 	line-height: 28px;
 	margin-bottom: 15px;
+	span
+	{
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: none;
+		svg
+		{
+			width: 30px;
+			height: 30px;
+			transition: .3s all;
+			path
+			{
+				fill:white;
+			}
+		}
+	}
+	&.active
+	{
+		background: rgba(25, 38, 51, 0.85);
+		span
+		{
+			svg
+			{
+				transform: rotate(-180deg);
+				transition: .3s all;
+			}
+		}
+	}
 }
 .footer-nav-list
 {
+	&.active
+	{
+		background: rgba(25, 38, 51, 0.85);
+	}
 	ul
 	{
 		li
@@ -37,11 +70,9 @@ footer
 				color: #9AAABD;
 				font-size: 14px;
 				line-height: 20px;
-				// letter-spacing: 0.25px;
 				transition:.3s all;
 				&:hover
 				{
-					// letter-spacing: 0.15px;
 					color: #FFFFFF;
 					transition:.3s all;
 				}
@@ -61,4 +92,55 @@ footer
 	line-height: 16px;
 	color: #6F8196;
 	margin-right: 30px;
+}
+@media (max-width: 991px)
+{
+	footer
+	{
+		position: unset;
+		padding: 20px 0;
+		height: auto;
+	}
+	.footer-nav
+	{
+		flex-flow:column;
+	}
+	.footer-nav-item
+	{
+		&:first-child
+		{
+			.footer-nav-list
+			{
+				ul
+				{
+					display: block;
+				}
+			}
+		}
+		.footer-nav-list
+			{
+				ul
+				{
+					display: none;
+				}
+			}
+	}
+	.footer-copyrights
+	{
+		flex-flow:column;
+		flex-direction: column-reverse;
+		align-items:flex-start;
+	}
+	.footer-copyrights-logo
+	{
+		margin-bottom: 10px;
+	}
+	.footer-nav-title
+	{
+
+		span
+		{
+			display: block;
+		}
+	}
 }

@@ -20,12 +20,20 @@
 /* components */
 @import 'components/header';
 @import 'components/hero-block';
+@import 'components/client-quotes';
+@import 'components/calculate-investment';
+@import 'components/users-say';
+@import 'components/book-demo';
+@import 'components/questions';
+@import 'components/companies';
+@import 'components/search-banner';
+@import 'components/needed';
+@import 'components/deployment';
 @import 'components/footer';
-
 
 body
 {
-	min-width: 1200px;
+	min-width: 320px;
 }
 
 * {

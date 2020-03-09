@@ -24,7 +24,9 @@
 	border-color:transparent;
 	font-size: 20px;
 	line-height: 50px;
-	width: 171px;
+	width: 100%;
+	min-width: 171px;
+	max-width: 430px;
 	height: 52px;
 	text-align: center;
 	transition: all 0.2s;
@@ -53,7 +55,7 @@
 		box-shadow: 0px 4px 6px rgba(77, 98, 124, 0.2);
 	}
 }
-.button_yellow
+.button_primary
 {
 	background: #FFDB21;
 	color: #153051;
@@ -68,7 +70,7 @@
 		transition: all 0.3s;
 	}
 }
-.button_blue
+.button_system
 {
 	background: #2F74C8;
 	&:hover
@@ -240,6 +242,20 @@
 		height: 150px;
 	}
 }
+//textarea
+.textarea
+{
+	background: #FFFFFF;
+	width: 359px;
+	border: 2px solid #CDD9E8;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 16px;
+	transition: all 0.3s;
+	font-size: 20px;
+	line-height: 28px;
+	color: #4D627C;
+}
 //inputs
 .input
 {
@@ -254,7 +270,20 @@
 	font-size: 20px;
 	line-height: 28px;
 	color: #4D627C;
-	cursor:pointer;
+	&.input__default
+	{
+		border: 2px solid #CDD9E8;
+		&:hover
+		{
+			border: 2px solid #6e7277;
+			transition:.3s all;
+		}
+		&:focus
+		{
+			border: 2px solid #6e7277;
+			transition:.3s all;
+		}
+	}
 	&.input__disabled
 	{
 		color: #CDD9E8;
@@ -418,7 +447,7 @@
 	height: 100vh;
 	background-color: rgba(black, 0.6);
 	position: fixed;
-	top: 0;
+	top: 0px;
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.3s;
@@ -431,6 +460,11 @@
 		z-index: 9999;
 	}
 }
+.mobile-overlay
+{
+	top: 91px;
+	background: none;
+}
 .popup
 {
 	position: absolute;
@@ -439,31 +473,133 @@
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	top: 5vh;
+	// top: 91px;
 	background-color: white;
-	text-align: center;
 	visibility: hidden;
 	opacity: 0;
-	transform: translateY(-20px);
+	// transform: translateX(-20px);
 	transition: all 0.3s;
 	z-index: 5;
 	&._show
 	{
 		visibility: visible;
 		opacity: 1;
-		transform: translateY(0px);
+		// transform: translateX(0px);
 		transition: all 0.3s;
 	}
 }
 .popup-close
 {
 	position: absolute;
-	right: 5px;
-	top: 4px;
-	font-size: 14px;
-	display: inline-block;
+	cursor: pointer;
+	right: 25px;
+	top: 25px;
+	svg
+	{
+		transition: .3s all;
+		&:hover
+		{
+			path
+			{
+				fill: $accent-color;
+				transition: .3s all;
+			}
+		}
+	}
 }
-
+.demo-popup
+{
+	border-radius: 6px;
+	width: 570px;
+	height: 634px;
+	&__header
+	{
+		position: relative;
+		background: #F9FCFF;
+		padding: 25px;
+		text-align: left;
+	}
+	&__title
+	{
+		font-size: 24px;
+		line-height: 34px;
+		letter-spacing: 0.1px;
+		font-family: $medium;
+		color: $accent-color;
+	}
+	&__form
+	{
+		padding: 40px 85px;
+	}
+	&__item
+	{
+		margin-bottom: 24px;
+		&-title
+		{
+			font-size: 16px;
+			line-height: 22px;
+			color: #6F8196;
+			margin-bottom: 7px;
+		}
+	}
+}
+.mobile-popup
+{
+	width: 100%;
+	height: calc(100% - 91px);
+	left: 0;
+	top: 0;
+	right:unset;
+	position: relative;
+	overflow-y: auto;
+	&__button
+	{
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		padding: 0 15px;
+	}
+	&__list
+	{
+		height: 35em;
+		overflow:scroll;
+	}
+	&__item
+	{
+		border-bottom: 1px solid #F0F5FB;
+		position: relative;
+		a
+		{
+			display: block;
+			padding: 15px;
+			color: $accent-color;
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+	&__dropdown
+	{
+		display: none;
+		li
+		{
+			a
+			{
+				padding: 20px;
+				font-size: 16px;
+				line-height: 22px;
+				letter-spacing: 0.1px;
+			}
+			&:hover
+			{
+				background: #F9FCFF;
+				a
+				{
+					color: $blue;
+				}
+			}
+		}
+	}
+}
 //custom placeholder
 .custom-input
 {
@@ -515,5 +651,100 @@
 		top: 14px;
 		font-size: 12px;
 		transition: all 0.3s;
+	}
+}
+.title
+{
+	font-size: 60px;
+	line-height: 70px;
+	font-family: $black;
+}
+.text
+{
+	font-size: 24px;
+	line-height: 34px;
+	font-family: $light;
+}
+@media (max-width: 991px)
+{
+	.container
+	{
+		&--fullwidth
+		{
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.title
+	{
+		font-family: $accent-font;
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.text
+	{
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.25px;
+	}
+	body
+	{
+		margin-top: 91px;
+		margin-bottom: 0;
+	}
+	.input
+	{
+		height: 44px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.button
+	{
+		height: 44px;
+		line-height: 42px;
+		min-width: 115px;
+		font-size:14px;
+	}
+	.hero-block__form
+	{
+		display: flex;
+	}
+}
+@media (max-width: 600px)
+{
+	.demo-popup
+	{
+		top: 0;
+		height: 100%;
+		width: 100%;
+		&__header
+		{
+			padding: 15px 25px;
+		}
+		&__title
+		{
+			font-size: 20px;
+			line-height: 28px;
+			letter-spacing: 0.44px;
+		}
+		&__form
+		{
+			padding: 21px;
+		}
+		&__item
+		{
+			.input
+			{
+				width: 100%;
+			}
+			.textarea
+			{
+				width: 100%;
+			}
+		}
+		.popup-close
+		{
+			top: 15px;
+		}
 	}
 }
