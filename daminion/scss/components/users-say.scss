@@ -5,10 +5,40 @@
 	{
 		text-align: center;
 		margin-bottom: 60px;
+		svg
+		{
+			vertical-align: middle;
+		}
 	}
 	&__list
 	{
 		padding: 0 80px;
+		.prevArrow
+		{
+			left: 0;
+		}
+		.nextArrow
+		{
+			right: 0;
+		}
+		.prevArrow,
+		.nextArrow
+		{
+			z-index: 999;
+			svg
+			{
+				width: 20px;
+				height: 20px;
+				path
+				{
+					fill: #9AAABD;
+				}
+			}
+		}
+		.slick-slide
+		{
+			margin-right: 10px;
+		}
 	}
 	&__item
 	{
@@ -16,6 +46,7 @@
 		border: 1px solid #F0F5FB;
 		box-shadow: 0px 4px 4px rgba(0, 54, 98, 0.02);
 		border-radius: 3px;
+		margin-right: 10px;
 		&-title
 		{
 			font-size: 20px;
@@ -60,7 +91,6 @@
 	}
 	&__top
 	{
-		margin-bottom: 60px;
 		border-bottom: 1px solid #F0F5FB;
 		padding: 30px;
 		display: flex;
@@ -69,6 +99,30 @@
 	&__bot
 	{
 		padding: 30px;
+		&-title
+		{
+			font-family: $medium;
+			color: $accent-color;
+			font-size: 24px;
+			line-height: 34px;
+			margin-bottom: 20px;
+		}
+		&-text
+		{
+			font-size: 20px;
+			line-height: 28px;
+		}
+		&-rating
+		{
+			margin-bottom: 15px;
+			span
+			{
+				&:not(last-child)
+				{
+					margin-right: 13px;
+				}
+			}
+		}
 	}
 	&__left
 	{
@@ -80,5 +134,110 @@
 	{
 		display: flex;
 		align-items:center;
+	}
+}
+@media (max-width: 991px)
+{
+	.users-say
+	{
+		padding: 30px 0;
+		&__title
+		{
+			svg
+			{
+				width: 39px;
+				height: 39px;
+			}
+		}
+	}
+}
+@media (max-width: 767px)
+{
+	.users-say
+	{
+		&__list
+		{
+			padding: 0;
+			.prevArrow
+			{
+				left: 40px;
+			}
+			.nextArrow
+			{
+				right: 40px;
+			}
+			.prevArrow,
+			.nextArrow
+			{
+				top: 3%;
+			}
+		}
+		&__col
+		{
+			margin-bottom: 15px;
+		}
+		&__title
+		{
+			margin-bottom: 30px;
+		}
+		&__top
+		{
+			padding: 0;
+			flex-flow:column;
+			padding-bottom: 15px;
+		}
+		&__bot
+		{
+			padding: 21px;
+			&-rating
+			{
+				text-align: center;
+			}
+			&-title
+			{
+				text-align: center;
+				font-size: 16px;
+				line-height: 22px;
+				letter-spacing: 0.1px;
+			}
+			&-text
+			{
+				text-align: center;
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+		&__left
+		{
+			justify-content: center;
+			flex-flow:column;
+		}
+		&__item
+		{
+			border: none;
+			&-img
+			{
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+			&-title
+			{
+				text-align: center;
+				margin-bottom: 5px;
+			}
+			&-desc
+			{
+				text-align: center;
+			}
+			&-medal
+			{
+				width: 45px;
+				margin-right: 0;
+			}
+		}
+		&__right
+		{
+			justify-content: center;
+		}
 	}
 }
