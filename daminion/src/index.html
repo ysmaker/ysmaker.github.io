@@ -10,9 +10,72 @@
 	@@include('./components/search-banner.html')
 	@@include('./components/needed.html')
 	@@include('./components/deployment.html')
-	@@include('./components/banners.html')
-	@@include('./components/solutions.html')
 	@@include('./components/client-quotes.html')
+	<section class="banners">
+		<h2>Top 3 Daminion benefits</h2>
+		<div class="banners__sldier-wr">
+			<div class="banners__wrapper">
+				<img class="banners__img-right" src="./img/pic1.png" alt="phone">
+				<div class="container">
+					<div class="banners__info-block banners__info-block_flex">
+						@@include('../img/svg/Organize.svg')
+						<div class="banners__text-wr banners__text-wr_max-wd">
+							<h3>Organize</h3>
+							<span>Daminion protects access to your data by roles and on the file level. Be as granular as you like. Assign Daminion-managed roles to your users. Roles will set and control the user’s access to functionality any way you like. </span>
+							<div class="banners__info-wrapper">
+								@@include('../img/svg/programmer 1.svg')
+								<p class="banners__strong-text">
+									Searching for the right digital asset by tags is 100x times faster.
+								</p>
+							</div>
+							<p class="banners__medium-text">Demotivated by manually going through all your files? What if you could narrow your searches by using tags. It will radically increase your productivity and preserve your sanity</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="banners__wrapper">
+				<img class="banners__img-left" src="./img/banner2.png" alt="phone">
+				<div class="container">
+					<div class="banners__info-block banners__info-block_right">
+						@@include('../img/svg/Geotagging.svg')
+						<div class="banners__text-wr">
+							<h3>Geotagging</h3>
+							<span>Where in the world was Whaldo? Visualize on the map the actual locations your photos were taken. Or, if geodata is missing, just drag images to the map right inside Daminion. Done!</span>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="banners__wrapper">
+				<img class="banners__img-right" src="./img/pic2.png" alt="phone">
+				<div class="container">
+					<div class="banners__info-block">
+						@@include('../img/svg/Collaborate.svg')
+						<div class="banners__text-wr">
+							<h3>Data security</h3>
+							<span>Daminion protects access to your data by roles and on the file level. Be as granular as you like. Assign Daminion-managed roles to your users. Roles will set and control the user’s access to functionality any way you like. </span>
+							<div class="banners__info-wrapper">
+								@@include('../img/svg/networking 1.svg')
+								<p class="banners__strong-text">
+									Marketers and designers can collaborate x10 times faster by using Daminion. 
+								</p>
+							</div>
+							<div class="banners__info-wrapper">
+								@@include('../img/svg/music-player 1.svg')
+								<p class="banners__strong-text">
+									Marketers and designers can collaborate x10 times faster by using Daminion. 
+								</p>
+							</div>
+							<p class="banners__medium-text">Daminion role structure is as flexibleas you need it to be.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	@@include('./components/solutions.html')
+	@@include('./components/banners.html')
 	@@include('./components/сalculate-investment.html')
 	<section class="client-quotes">
 		<div class="container">
@@ -44,6 +107,7 @@ As a systems director, it gives me a nice clean feeling to know all our media is
 			</div>
 		</div>
 	</section>
+	@@include('./components/helpful.html')
 	@@include('./components/questions.html')
 	@@include('./components/users-say.html')
 	@@include('./components/book-demo.html')

@@ -1,0 +1,193 @@
+.helpful
+{
+	h2
+	{
+		font-size: 60px;
+		line-height: 70px;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+	h3
+	{
+		font-size: 48px;
+		line-height: 56px;
+		margin-bottom: 20px;
+		font-family: $light;
+		font-weight: 100;
+	}
+	h4
+	{
+		font-size: 24px;
+		line-height: 34px;
+		margin-bottom: 30px;
+		font-family: $light;
+		font-weight: 100;
+	}
+	p
+	{
+		font-size: 20px;
+		line-height: 28px;
+		color: #4D627C;
+		margin-bottom: 0;
+	}
+	&__card
+	{
+		display: flex;
+		align-items: center;
+		margin-bottom: 130px;
+		min-height: 270px;
+	}
+	&__card-wr
+	{
+		max-width: 770px;	
+	}
+	&__card-left
+	{
+		margin-right: 130px;
+		line-height: 0;
+	}
+	&__svg-wr
+	{
+		svg:not(:last-child)
+		{
+			margin-right: 38px;
+		}
+	}
+	.slick-next.nextArrow
+	{
+		&:before
+		{
+			content: '';
+		}
+		top: 22%;
+		right: 0px;
+		
+		svg
+		{
+			width: 16px;
+			height: 34px;
+		}
+	}
+	.slick-prev.prevArrow
+	{
+		&:before
+		{
+			content: '';
+		}
+		top: 22%;
+		left: 0;
+
+		svg
+		{
+			width: 16px;
+			height: 34px;
+		}
+	}
+}
+
+@media(max-width: 1200px)
+{
+	.helpful
+	{
+		h3
+		{
+			text-align: center;
+		}
+		h4
+		{
+			text-align: center;
+		}
+		p
+		{
+			text-align: center;
+		}
+		&__card
+		{
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__card-left
+		{
+			margin-right: 0;
+		}
+		&__svg-wr
+		{
+			text-align: center;
+		}
+		&__slider
+		{
+			width: 100%;
+			position: relative;
+		}
+	}
+}
+@media(max-width: 768px)
+{
+	.helpful
+	{
+		&__card
+		{
+			margin-bottom: 0;
+		}
+		h2
+		{
+			font-size: 24px;
+			line-height: 34px;
+			margin-bottom: 30px;
+			font-family: $medium;
+			font-weight: 100;
+			max-width: 210px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&__card-left
+		{
+			text-align: center;
+			svg
+			{
+				max-width: 170px;
+				max-height: 170px;
+			}
+		}
+		h3
+		{
+			font-size: 20px;
+			line-height: 28px;
+			font-family: $medium;
+			letter-spacing: 0.44px;
+			margin-bottom: 10px;
+		}
+		h4
+		{
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: 0.1px;
+			margin-bottom: 20px;
+		}
+		p
+		{
+			margin-bottom: 30px;
+			font-size: 12px;
+			line-height: 16px;
+		}
+		&__svg-wr
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			svg
+			{
+				margin-bottom: 20px;
+			}
+
+			svg:not(:last-child)
+			{
+				margin-right: 0;
+			}
+		}
+	}
+}
