@@ -58,14 +58,8 @@ var o2 =
 		$(active).addClass('active')
 		$(active).siblings().removeClass('active')
 
-		if ($(window).width() < 768)
-		{
-			$(instance).parents('.slick-slide').siblings().find('.needed__tab-name-item').removeClass('needed__tab-name-item_active')
-		}
-		else
-		{
+			// $(instance).parents('.slick-slide').siblings().find('.needed__tab-name-item').removeClass('needed__tab-name-item_active')
 			$(instance).siblings().removeClass('needed__tab-name-item_active')
-		}
 	},
 	spoiler:
 	{

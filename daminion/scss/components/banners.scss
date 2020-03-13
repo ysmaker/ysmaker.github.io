@@ -76,7 +76,13 @@
 	{
 		display: flex;
 		justify-content: space-between;
-		
+		align-items: center;
+	}
+	&__svg-wrapper
+	{
+		width: 48px;
+		height: 48px;
+		margin-right: 25px;
 		svg
 		{
 			width: 48px;
@@ -100,10 +106,11 @@
 	}
 	&__text-wr
 	{
-		padding-top: 140px;
 		&_max-wd
 		{
+			padding-top: 140px;
 			max-width: 474px;
+			width: 100%;
 		}
 	}
 }

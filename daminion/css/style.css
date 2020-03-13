@@ -7702,8 +7702,16 @@ header {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .banners__info-wrapper svg {
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .banners__svg-wrapper {
+    width: 48px;
+    height: 48px;
+    margin-right: 25px; }
+    .banners__svg-wrapper svg {
       width: 48px;
       height: 48px; }
   .banners__strong-text {
@@ -7717,10 +7725,10 @@ header {
     font-size: 20px;
     line-height: 28px;
     color: #4D627C; }
-  .banners__text-wr {
-    padding-top: 140px; }
-    .banners__text-wr_max-wd {
-      max-width: 474px; }
+  .banners__text-wr_max-wd {
+    padding-top: 140px;
+    max-width: 474px;
+    width: 100%; }
 
 @media (max-width: 1200px) {
   .banners img {
