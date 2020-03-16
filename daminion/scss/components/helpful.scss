@@ -43,11 +43,14 @@
 	}
 	&__card-left
 	{
+		min-width: 270px;
 		margin-right: 130px;
 		line-height: 0;
 	}
 	&__svg-wr
 	{
+		display: flex;
+		align-items: center;
 		svg:not(:last-child)
 		{
 			margin-right: 38px;
@@ -112,7 +115,7 @@
 		}
 		&__svg-wr
 		{
-			text-align: center;
+			justify-content: center;
 		}
 		&__slider
 		{
@@ -144,6 +147,7 @@
 		&__card-left
 		{
 			text-align: center;
+			min-width: 170px;
 			svg
 			{
 				max-width: 170px;
