@@ -6736,7 +6736,9 @@ header {
     position: relative;
     background: #fff;
     padding: 30px 100px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 54, 98, 0.02);
+            box-shadow: 0px 4px 4px rgba(0, 54, 98, 0.02); }
     .questions__item-title {
       font-size: 20px;
       line-height: 28px;
@@ -6748,6 +6750,8 @@ header {
         -webkit-transition: .3s all;
         -o-transition: .3s all;
         transition: .3s all;
+        width: 30px;
+        height: 30px;
         right: 30px; }
       .questions__item-title.active svg {
         -webkit-transform: rotate(-180deg);
@@ -6772,8 +6776,11 @@ header {
           margin-right: 20px; }
         .questions__item-answer .quote span {
           position: absolute;
+          font-size: 12px;
+          line-height: 16px;
+          color: #4D627C;
           right: 0;
-          bottom: -30px; }
+          bottom: -10px; }
       .questions__item-answer p {
         font-size: 20px;
         line-height: 28px;
