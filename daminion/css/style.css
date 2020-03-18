@@ -6251,7 +6251,8 @@ header {
 .header__burger {
   display: none;
   position: absolute;
-  left: 0; }
+  left: 0;
+  border: none; }
   .header__burger.active {
     left: -9px;
     width: 40px;
