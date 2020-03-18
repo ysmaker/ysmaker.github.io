@@ -133,7 +133,12 @@
 				line-height: 20px;
 				font-family: $medium;
 				color: #153051;
-				margin-bottom: 20px;
+				// margin-bottom: 20px;
+			}
+			svg
+			{
+				right: 10px;
+				top: 15px;
 			}
 			&-svg
 			{
@@ -171,6 +176,7 @@
 				}
 				ul
 				{
+					margin-top: 20px;
 					margin-bottom: 20px;
 					li
 					{

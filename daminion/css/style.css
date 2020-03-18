@@ -6841,8 +6841,10 @@ header {
         font-size: 14px;
         line-height: 20px;
         font-family: "Roboto-Medium", sans-serif;
-        color: #153051;
-        margin-bottom: 20px; }
+        color: #153051; }
+      .questions__item svg {
+        right: 10px;
+        top: 15px; }
       .questions__item-svg {
         left: 20px; }
         .questions__item-svg svg {
@@ -6864,6 +6866,7 @@ header {
         font-size: 12px;
         line-height: 16px; }
       .questions__item-answer ul {
+        margin-top: 20px;
         margin-bottom: 20px; }
         .questions__item-answer ul li {
           font-size: 12px;
