@@ -5346,6 +5346,8 @@ html {
     background: none;
     -webkit-box-shadow: inset 0px -1px 0px #CDD9E8;
             box-shadow: inset 0px -1px 0px #CDD9E8; }
+  .link.link_default {
+    background: none; }
 
 .svg_link {
   display: -webkit-box;
