@@ -33,7 +33,9 @@
 	display: inline-block;
 	&.button_size_large
 	{
-		width: 171px;
+		font-family: $light;
+		font-size: 24px;
+		line-height: 58px;
 		height: 58px;
 	}
 	&:hover
@@ -123,7 +125,7 @@
 	align-items:center;
 	svg
 	{
-		margin-right: 10px;
+		margin-right: 6px;
 		transition: all 0.2s;
 	}
 	a

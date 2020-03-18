@@ -4,7 +4,7 @@
 	&__title
 	{
 		text-align: center;
-		margin-bottom: 60px;
+		margin-bottom: 65px;
 	}
 	&__bot
 	{
@@ -13,7 +13,7 @@
 		flex-flow:column;
 		.button
 		{
-			margin-bottom: 24px;
+			margin-bottom: 21px;
 		}
 	}
 	&__item
@@ -21,7 +21,7 @@
 		display: flex;
 		justify-content: center;
 		align-items:center;
-		margin-bottom: 60px;
+		margin-bottom: 70px;
 		&-col
 		{
 			flex-basis:26%;
@@ -49,8 +49,8 @@
 		&-range
 		{
 			width: 430px;
-			margin-right: 25px;
-			margin-left: 25px;
+			margin-right: 26px;
+			margin-left: 33px;
 		}
 	}
 }

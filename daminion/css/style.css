@@ -5269,7 +5269,9 @@ html {
   transition: all 0.2s;
   display: inline-block; }
   .button.button_size_large {
-    width: 171px;
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 24px;
+    line-height: 58px;
     height: 58px; }
   .button:hover {
     background: #4D627C;
@@ -5355,7 +5357,7 @@ html {
       -ms-flex-align: center;
           align-items: center; }
   .svg_link svg {
-    margin-right: 10px;
+    margin-right: 6px;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s; }
@@ -6159,7 +6161,6 @@ header {
     margin-right: 68px; }
     .header__menu .menu__item a {
       font-size: 20px;
-      font-family: "Roboto-Light", sans-serif;
       color: #153051; }
       .header__menu .menu__item a svg {
         position: absolute;
@@ -6257,7 +6258,7 @@ header {
     display: block; } }
 
 .hero-block {
-  height: 100vh;
+  padding-top: 70px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6293,6 +6294,8 @@ header {
     margin-left: -0.5em; }
 
 @media (max-width: 991px) {
+  .hero-block {
+    padding-top: 30px; }
   .hero-block__title {
     padding: 0;
     margin-bottom: 20px; }
@@ -6394,7 +6397,7 @@ header {
   padding-bottom: 130px; }
   .calculate__title {
     text-align: center;
-    margin-bottom: 60px; }
+    margin-bottom: 65px; }
   .calculate__bot {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6410,7 +6413,7 @@ header {
         -ms-flex-flow: column;
             flex-flow: column; }
     .calculate__bot .button {
-      margin-bottom: 24px; }
+      margin-bottom: 21px; }
   .calculate__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6424,7 +6427,7 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 60px; }
+    margin-bottom: 70px; }
     .calculate__item-col {
       -webkit-flex-basis: 26%;
           -ms-flex-preferred-size: 26%;
@@ -6445,8 +6448,8 @@ header {
       color: #4D627C; }
     .calculate__item-range {
       width: 430px;
-      margin-right: 25px;
-      margin-left: 25px; }
+      margin-right: 26px;
+      margin-left: 33px; }
 
 @media (max-width: 991px) {
   .calculate {
@@ -6743,8 +6746,7 @@ header {
       font-size: 20px;
       line-height: 28px;
       font-family: "Roboto-Regular", sans-serif;
-      color: #153051;
-      margin-bottom: 30px; }
+      color: #153051; }
       .questions__item-title svg {
         position: absolute;
         -webkit-transition: .3s all;
@@ -6786,10 +6788,12 @@ header {
         line-height: 28px;
         color: #153051; }
       .questions__item-answer ul {
+        margin-top: 30px;
         margin-bottom: 32px; }
         .questions__item-answer ul li {
           font-size: 20px;
-          line-height: 28px; }
+          line-height: 28px;
+          margin-bottom: 20px; }
           .questions__item-answer ul li:before {
             content: "•";
             display: inline;

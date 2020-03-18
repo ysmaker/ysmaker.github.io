@@ -1,6 +1,7 @@
 .hero-block
 {
-	height: 100vh;
+	// height: 100vh;
+	padding-top: 70px;
 	display: flex;
 	align-items:center;
 	justify-content:center;
@@ -35,6 +36,10 @@
 }
 @media (max-width: 991px)
 {
+	.hero-block
+	{
+		padding-top: 30px;
+	}
 	.hero-block__title
 	{
 		padding: 0;
