@@ -515,6 +515,11 @@
 }
 .demo-popup
 {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 	border-radius: 6px;
 	width: 570px;
 	height: 634px;
@@ -547,16 +552,22 @@
 			color: #6F8196;
 			margin-bottom: 7px;
 		}
+		.textarea
+		{
+			width: 100%;
+		}
+		.input
+		{
+			width: 100%;
+		}
 	}
 }
 .mobile-popup
 {
 	width: 100%;
 	height: calc(100% - 91px);
-	left: 0;
-	top: 0;
 	right:unset;
-	position: relative;
+	// position: relative;
 	overflow-y: auto;
 	&__button
 	{
