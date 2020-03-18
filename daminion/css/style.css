@@ -2695,6 +2695,13 @@
 /*  Переменные с гарнитурами шрифтов  */
 /*  основные цвета  */
 @font-face {
+  font-family: "slick";
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'a_lcdnovaregular';
   src: url("../fonts/a_lcdnova-webfont.eot");
   src: url("../fonts/a_lcdnova-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/a_lcdnova-webfont.woff2") format("woff2"), url("../fonts/a_lcdnova-webfont.woff") format("woff"), url("../fonts/a_lcdnova-webfont.ttf") format("truetype");
@@ -5237,6 +5244,9 @@ html {
     -ms-flex-item-align: stretch !important;
     -webkit-align-self: stretch !important;
             align-self: stretch !important; } }
+
+.slick-loading .slick-list {
+  background: none; }
 
 .buttons {
   display: -webkit-box;
