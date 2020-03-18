@@ -5851,6 +5851,8 @@ html {
   font-family: "Roboto-Light", sans-serif; }
 
 @media (max-width: 991px) {
+  .button.button_size_large {
+    font-size: 20px; }
   .container--fullwidth {
     margin: 0;
     padding: 0; }
