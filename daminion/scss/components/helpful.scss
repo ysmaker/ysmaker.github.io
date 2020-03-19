@@ -58,11 +58,12 @@
 	}
 	.slick-next.nextArrow
 	{
+		z-index: 99;
 		&:before
 		{
 			content: '';
 		}
-		top: 22%;
+		top: 13%;
 		right: 0px;
 		
 		svg
@@ -73,11 +74,12 @@
 	}
 	.slick-prev.prevArrow
 	{
+		z-index: 99;
 		&:before
 		{
 			content: '';
 		}
-		top: 22%;
+		top: 13%;
 		left: 0;
 
 		svg
@@ -152,6 +154,7 @@
 			{
 				max-width: 170px;
 				max-height: 170px;
+				margin-bottom: 50px;
 			}
 		}
 		h3

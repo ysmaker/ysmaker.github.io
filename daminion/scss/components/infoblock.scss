@@ -1,4 +1,4 @@
-.banners
+.infoblock
 {
 	height: 100%;
 	position: relative;
@@ -36,6 +36,8 @@
 	{
 		position: relative;
 		height: 670px;
+		display: flex;
+		align-items: center;
 
 		&:not(:last-child)
 		{
@@ -56,7 +58,7 @@
 	}
 	&__info-block
 	{
-		max-width: 620px;
+		max-width: 630px;
 
 		&_right
 		{
@@ -66,7 +68,6 @@
 		&_flex
 		{
 			display: flex;
-			padding-top: 60px;
 
 			svg
 			{
@@ -127,7 +128,7 @@
 }
 @media(max-width: 1660px)
 {
-	.banners
+	.infoblock
 	{
 		&__info-block
 		{
@@ -148,7 +149,7 @@
 }
 @media(max-width: 1200px)
 {
-	.banners
+	.infoblock
 	{
 		img
 		{
@@ -205,8 +206,13 @@
 }
 @media(max-width: 768px)
 {
-	.banners
+	.infoblock
 	{
+		h2
+		{
+			padding-right: 15px;
+			padding-left: 15px;
+		}
 		&__wrapper
 		{
 			&:not(:last-child)
@@ -272,6 +278,7 @@
 			font-size: 16px;
 			line-height: 22px;
 			margin-bottom: 30px;
+			font-weight: bold;
 		}
 		&__info-wrapper
 		{
