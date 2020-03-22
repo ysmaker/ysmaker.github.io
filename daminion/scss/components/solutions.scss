@@ -1,5 +1,9 @@
 .solutions
 {
+	&__wrapper
+	{
+		min-height: 1684px;
+	}
 	margin-bottom: 130px;
 	width: 1170px;
 	&__overflow
@@ -26,6 +30,33 @@
 	{
 		display: flex;
 		height: 124px;
+
+		&_fixed
+		{
+			height: 60px;
+			width: 100%;
+			top: 138px;
+			position: fixed;
+		}
+	}
+	&__title_fixed &__storage-wr
+	{
+		height: 60px;
+
+		span
+		{
+			font-size: 16px;
+		}
+	}
+	&__title_fixed &__box
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		span
+		{
+			font-size:14px;
+		}
 	}
 	&__empty
 	{
