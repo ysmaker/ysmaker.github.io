@@ -84,7 +84,6 @@ var o2 =
 				$('.solutions__title').removeClass('solutions__title_fixed');
 			}
 		})
-	},
 		// $(window).scroll(function (event)
 		// {
 		// 	let windowScroll = $(window).scrollTop()
