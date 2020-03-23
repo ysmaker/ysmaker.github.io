@@ -57,7 +57,6 @@ var o2 =
 		let elementClick = $('.solutions');
 		let destination = $(elementClick).offset().top;
 		let blockHeight = $('.solutions__wrapper').height() + destination;
-console.log(blockHeight)
 		$(window).scroll(function (event)
 		{
 			if(window.innerWidth > 1200)
