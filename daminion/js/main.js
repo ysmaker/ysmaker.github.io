@@ -56,14 +56,14 @@ var o2 =
 	{
 		let elementClick = $('.solutions');
 		let destination = $(elementClick).offset().top;
-		let blockHeight = $('.solutions__wrapper').height() + destination;
+		let endDestination = $('.infoblock-second').offset().top - 390;
 		$(window).scroll(function (event)
 		{
+			let windowScroll = $(window).scrollTop()
 			if(window.innerWidth > 1200)
 			{
-				if(window.scrollY > destination && window.scrollY < blockHeight)
-				{
-					$('.solutions__title').find('svg, .solutions__box-icons').addClass('display-none');
+				if ( windowScroll > destination && windowScroll < endDestination) {
+			        $('.solutions__title').find('svg, .solutions__box-icons').addClass('display-none');
 					$('.solutions__title').addClass('solutions__title_fixed');
 				}
 				else
