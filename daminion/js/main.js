@@ -6,12 +6,6 @@
 $(document).ready(function()
 {
 	o2.init();
-	var waypoint = new Waypoint({
-	  element: document.getElementsByClassName('solutions__wrapper'),
-	  handler: function(direction) {
-	    console.log('Scrolled to waypoint!')
-	  }
-	})
 });
 
 /**
@@ -60,16 +54,17 @@ var o2 =
 	},
 	scroll: function()
 	{
-		let elementClick = $('.solutions');
-		let destination = $(elementClick).offset().top + 860;
-		let endDestination = $('.infoblock-second').offset().top + 500;
-		let $window = $(window);
-		$window.on('load scroll', function(){
-			let windowScroll = $(window).scrollTop()
+		$(window).scroll(function (event)
+		{
+			let elementClick = $('.solutions');
+			let destination = $(elementClick).offset().top;
+			let blockHeight = $('.solutions__wrapper').height() + destination;
+			console.log(destination)
 			if(window.innerWidth > 1200)
 			{
-				if ( windowScroll > destination && windowScroll < endDestination) {
-			        $('.solutions__title').find('svg, .solutions__box-icons').addClass('display-none');
+				if(window.scrollY > destination && window.scrollY < blockHeight)
+				{
+					$('.solutions__title').find('svg, .solutions__box-icons').addClass('display-none');
 					$('.solutions__title').addClass('solutions__title_fixed');
 				}
 				else
