@@ -21,7 +21,7 @@ var o2 =
 	{
 		this.makePhoneMask();
 		this.range();
-		this.header.stickyHeader();
+		// this.header.stickyHeader();
 		this.tabs()
 		this.scroll();
 		this.sliders.neededSlider();
