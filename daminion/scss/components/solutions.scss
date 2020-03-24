@@ -30,13 +30,14 @@
 	{
 		display: flex;
 		height: 124px;
-
+		transition: .2s all;
 		&_fixed
 		{
 			height: 60px;
 			width: 100%;
 			top: 138px;
 			position: fixed;
+			transition: .2s all;
 		}
 	}
 	&__title_fixed &__storage-wr
@@ -69,10 +70,9 @@
 		max-width: 180px;
 		background-color: #1D3E66;
 		position: relative;
-
 		&:first-child
 		{
-			border-right:1px solid #4D627C;
+			border-right: 1px solid #4D627C;
 		}
 	}
 	&__box
@@ -105,7 +105,6 @@
 			margin-bottom: 9px;
 		}
 	}
-
 	&__storage-wr
 	{
 		position: absolute;
@@ -121,6 +120,7 @@
 
 		svg
 		{
+			transition: .3s all;
 			margin-bottom: 13px;
 		}
 
@@ -135,6 +135,10 @@
 	}
 	&__box-icons
 	{
+		svg
+		{
+			transition: .3s all;
+		}
 		svg:not(:last-child)
 		{
 			margin-right: 13px;
@@ -196,6 +200,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
 		strong
 		{
 			color: #F3675E;
@@ -249,19 +254,6 @@
 			{
 				font-size: 20px;
 				color: $accent-color;
-			}
-		}
-		&_pd
-		{
-			padding-top: 11px;
-			padding-bottom: 11px;
-			span
-			{
-				font-size: 14px;
-				strong
-				{
-					font-size: 16px;
-				}
 			}
 		}
 	}

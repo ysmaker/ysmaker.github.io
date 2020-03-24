@@ -3197,7 +3197,12 @@ a:focus {
   margin: 0; }
 
 .display-none {
-  display: none !important; }
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+          transform: translateY(-30px);
+  position: absolute;
+  transtion: .3s all; }
 
 /*
 Это bs4. Если кому-то нужно кастомизировать эту сетку,
@@ -7390,12 +7395,18 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 124px; }
+    height: 124px;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all; }
     .solutions__title_fixed {
       height: 60px;
       width: 100%;
       top: 138px;
-      position: fixed; }
+      position: fixed;
+      -webkit-transition: .2s all;
+      -o-transition: .2s all;
+      transition: .2s all; }
   .solutions__title_fixed .solutions__storage-wr {
     height: 60px; }
     .solutions__title_fixed .solutions__storage-wr span {
@@ -7474,6 +7485,9 @@ header {
     background-color: #1D3E66;
     padding-top: 20px; }
     .solutions__storage-wr svg {
+      -webkit-transition: .3s all;
+      -o-transition: .3s all;
+      transition: .3s all;
       margin-bottom: 13px; }
     .solutions__storage-wr span {
       color: #fff;
@@ -7481,6 +7495,10 @@ header {
       line-height: 28px;
       max-width: 130px;
       text-align: center; }
+  .solutions__box-icons svg {
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all; }
   .solutions__box-icons svg:not(:last-child) {
     margin-right: 13px; }
   .solutions__list {
@@ -7586,13 +7604,6 @@ header {
     .solutions__list-box_black span {
       font-size: 20px;
       color: #153051; }
-    .solutions__list-box_pd {
-      padding-top: 11px;
-      padding-bottom: 11px; }
-      .solutions__list-box_pd span {
-        font-size: 14px; }
-        .solutions__list-box_pd span strong {
-          font-size: 16px; }
 
 @media (max-width: 768px) {
   .solutions {

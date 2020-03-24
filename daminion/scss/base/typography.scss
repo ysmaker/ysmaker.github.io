@@ -123,5 +123,8 @@ a:focus
 }
 .display-none
 {
-	display: none!important;
+	opacity: 0;
+	transform: translateY(-30px);
+	position: absolute;
+	transtion: .3s all;
 }
