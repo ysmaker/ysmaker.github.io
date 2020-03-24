@@ -196,13 +196,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
-		&_pd
-		{
-			padding-top: 11px;
-			padding-bottom: 11px;
-		}
-
 		strong
 		{
 			color: #F3675E;
@@ -256,6 +249,19 @@
 			{
 				font-size: 20px;
 				color: $accent-color;
+			}
+		}
+		&_pd
+		{
+			padding-top: 11px;
+			padding-bottom: 11px;
+			span
+			{
+				font-size: 14px;
+				strong
+				{
+					font-size: 16px;
+				}
 			}
 		}
 	}

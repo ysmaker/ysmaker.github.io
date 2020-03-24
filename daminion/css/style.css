@@ -6805,7 +6805,7 @@ header {
           line-height: 16px;
           color: #4D627C;
           right: 0;
-          bottom: -10px; }
+          bottom: -14px; }
       .questions__item-answer p {
         font-size: 20px;
         line-height: 28px;
@@ -7546,9 +7546,6 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .solutions__list-box_pd {
-      padding-top: 11px;
-      padding-bottom: 11px; }
     .solutions__list-box strong {
       color: #F3675E;
       letter-spacing: 0.1px; }
@@ -7589,6 +7586,13 @@ header {
     .solutions__list-box_black span {
       font-size: 20px;
       color: #153051; }
+    .solutions__list-box_pd {
+      padding-top: 11px;
+      padding-bottom: 11px; }
+      .solutions__list-box_pd span {
+        font-size: 14px; }
+        .solutions__list-box_pd span strong {
+          font-size: 16px; }
 
 @media (max-width: 768px) {
   .solutions {
