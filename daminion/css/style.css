@@ -7579,8 +7579,10 @@ header {
               flex-direction: column; }
       .solutions__list-box_value span {
         font-size: 20px;
-        color: #000;
+        color: #153051;
         font-weight: bold; }
+      .solutions__list-box_value p {
+        color: #4D627C; }
     .solutions__list-box_green span {
       color: #27AE60;
       font-size: 20px; }

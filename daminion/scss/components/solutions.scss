@@ -87,7 +87,7 @@
 		justify-content: space-between;
 		padding-top: 23px;
 		padding-bottom: 17px;
-		
+
 		&:not(:last-child)
 		{
 			border-right:1px solid #4D627C;
@@ -105,7 +105,7 @@
 			margin-bottom: 9px;
 		}
 	}
-	
+
 	&__storage-wr
 	{
 		position: absolute;
@@ -196,7 +196,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		
+
 		&_pd
 		{
 			padding-top: 11px;
@@ -234,8 +234,12 @@
 			span
 			{
 				font-size: 20px;
-				color: #000;
+				color: #153051;
 				font-weight: bold;
+			}
+			p
+			{
+				color: #4D627C;
 			}
 		}
 		&_green
@@ -300,5 +304,5 @@
 				font-size: 11px;
 			}
 		}
-	}	
+	}
 }
