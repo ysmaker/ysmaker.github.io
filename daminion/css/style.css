@@ -8071,7 +8071,8 @@ footer {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-top: 22px; }
 
 .footer-nav-title {
   position: relative;
