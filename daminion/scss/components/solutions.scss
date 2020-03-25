@@ -70,10 +70,6 @@
 		max-width: 180px;
 		background-color: #1D3E66;
 		position: relative;
-		&:first-child
-		{
-			border-right: 1px solid #4D627C;
-		}
 	}
 	&__box
 	{
@@ -118,6 +114,10 @@
 		background-color: #1D3E66;
 		padding-top: 20px;
 
+		&_right-border
+		{
+			border-right: 1px solid #4D627C;
+		}
 		svg
 		{
 			transition: .3s all;
@@ -179,8 +179,9 @@
 
 		span
 		{
-			font-size: 14px;
-			line-height: 14px;
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: 0.1px;
 			color: $secondary-color;
 		}
 		p
@@ -205,6 +206,7 @@
 		{
 			color: #F3675E;
 			letter-spacing: 0.1px;
+			font-size: 16px;
 		}
 		.button
 		{
@@ -224,6 +226,16 @@
 			font-family: $light;
 			font-weight: bold;
 		}
+		&_pd
+		{
+			padding-left: 20px;
+			padding-right: 20px;
+			span
+			{
+				font-size: 14px;
+				letter-spacing: 0.25px;
+			}
+		}
 		&_value
 		{
 			display: flex;
@@ -238,6 +250,10 @@
 			p
 			{
 				color: #4D627C;
+				font-size: 14px;
+				line-height: 20px;
+				letter-spacing: 0.25px;
+				margin: 0;
 			}
 		}
 		&_green
@@ -263,6 +279,10 @@
 {
 	.solutions
 	{
+		&__wrapper
+		{
+			min-height: auto;
+		}
 		margin-bottom: 30px;
 		svg
 		{
@@ -293,6 +313,12 @@
 			padding-top: 12px;
 			padding-bottom: 12px;
 			font-weight: bold;
+
+			span
+			{
+				font-size: 9px;
+				line-height: 11px;
+			}
 		}
 		&__list-box
 		{
@@ -300,6 +326,25 @@
 			span
 			{
 				font-size: 11px;
+			}
+			strong
+			{
+				font-size: 11px;
+				line-height: 13px;
+			}
+			&_pd
+			{
+				padding-left: 20px;
+				padding-right: 20px;
+				line-height: 13px;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				span
+				{
+					max-width: 91px;
+					font-size: 9px;
+					letter-spacing: 0.25px;
+				}
 			}
 		}
 	}

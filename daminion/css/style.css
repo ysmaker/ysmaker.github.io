@@ -7115,7 +7115,7 @@ header {
     line-height: 70px;
     text-align: center;
     margin-bottom: 30px; }
-  .needed h3 {
+  .needed__subtitle {
     max-width: 895px;
     margin-right: auto;
     margin-left: auto;
@@ -7124,7 +7124,9 @@ header {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 100;
     text-align: center;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    margin-top: 0;
+    color: #153051; }
   .needed__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7424,8 +7426,6 @@ header {
     max-width: 180px;
     background-color: #1D3E66;
     position: relative; }
-    .solutions__storage:first-child {
-      border-right: 1px solid #4D627C; }
   .solutions__box {
     width: 100%;
     max-width: 180px;
@@ -7484,6 +7484,8 @@ header {
     height: 144px;
     background-color: #1D3E66;
     padding-top: 20px; }
+    .solutions__storage-wr_right-border {
+      border-right: 1px solid #4D627C; }
     .solutions__storage-wr svg {
       -webkit-transition: .3s all;
       -o-transition: .3s all;
@@ -7539,8 +7541,9 @@ header {
         -ms-flex-direction: column;
             flex-direction: column; }
     .solutions__list-name span {
-      font-size: 14px;
-      line-height: 14px;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.1px;
       color: #6a7678; }
     .solutions__list-name p {
       margin-top: 0;
@@ -7566,7 +7569,8 @@ header {
             justify-content: center; }
     .solutions__list-box strong {
       color: #F3675E;
-      letter-spacing: 0.1px; }
+      letter-spacing: 0.1px;
+      font-size: 16px; }
     .solutions__list-box .button {
       max-width: 130px;
       width: 100%;
@@ -7582,6 +7586,12 @@ header {
       color: #4D627C;
       font-family: "Roboto-Light", sans-serif;
       font-weight: bold; }
+    .solutions__list-box_pd {
+      padding-left: 20px;
+      padding-right: 20px; }
+      .solutions__list-box_pd span {
+        font-size: 14px;
+        letter-spacing: 0.25px; }
     .solutions__list-box_value {
       display: -webkit-box;
       display: -webkit-flex;
@@ -7597,7 +7607,11 @@ header {
         color: #153051;
         font-weight: bold; }
       .solutions__list-box_value p {
-        color: #4D627C; }
+        color: #4D627C;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        margin: 0; }
     .solutions__list-box_green span {
       color: #27AE60;
       font-size: 20px; }
@@ -7608,6 +7622,8 @@ header {
 @media (max-width: 768px) {
   .solutions {
     margin-bottom: 30px; }
+    .solutions__wrapper {
+      min-height: auto; }
     .solutions svg {
       width: 18px;
       height: 18px; }
@@ -7632,10 +7648,26 @@ header {
       padding-top: 12px;
       padding-bottom: 12px;
       font-weight: bold; }
+      .solutions__list-name span {
+        font-size: 9px;
+        line-height: 11px; }
     .solutions__list-box {
       min-height: 50px; }
       .solutions__list-box span {
-        font-size: 11px; } }
+        font-size: 11px; }
+      .solutions__list-box strong {
+        font-size: 11px;
+        line-height: 13px; }
+      .solutions__list-box_pd {
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 13px;
+        padding-top: 12px;
+        padding-bottom: 12px; }
+        .solutions__list-box_pd span {
+          max-width: 91px;
+          font-size: 9px;
+          letter-spacing: 0.25px; } }
 
 .infoblock {
   height: 100%;
@@ -7702,7 +7734,8 @@ header {
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      margin-right: -230px; }
+      margin-right: -230px;
+      max-width: 730px; }
   .infoblock__info-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7740,7 +7773,7 @@ header {
     color: #4D627C; }
   .infoblock__text-wr_max-wd {
     padding-top: 100px;
-    max-width: 474px;
+    max-width: 508px;
     width: 100%; }
 
 @media (max-width: 1660px) {
@@ -7866,12 +7899,14 @@ header {
   font-family: "Roboto-Light", sans-serif;
   font-weight: 100; }
 
-.helpful h4 {
+.helpful__card-text {
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 30px;
   font-family: "Roboto-Light", sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  margin-top: 0;
+  color: #153051; }
 
 .helpful p {
   font-size: 20px;
