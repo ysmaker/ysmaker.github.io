@@ -148,17 +148,28 @@
 	{
 		&__info-block
 		{
+			max-width: 600px;
 			&_flex
 			{
 				svg
 				{
-					max-width: 170px;
-					max-height: 170px;
+					margin-right: 20px;
 				}
 			}
 			&_flex-end
 			{
 				margin-right: 0;
+			}
+			&_flex-centered
+			{
+				margin-right: 0;
+			}
+		}
+		&__info-wrapper
+		{
+			svg
+			{
+				margin-right: 10px;
 			}
 		}
 	}
@@ -215,6 +226,7 @@
 			&_centered
 			{
 				max-width: 100%;
+				padding-top: 0;
 			}
 			&_max-wd
 			{
