@@ -151,6 +151,14 @@
 			line-height: 20px;
 			margin-bottom: 20px;
 		}
+		strong
+		{
+			font-family: $light;
+		}
+		.draggable
+		{
+			padding-bottom: 20px;
+		}
 		&__wrapper
 		{
 			flex-wrap: wrap;
@@ -179,6 +187,7 @@
 			font-weight: 100;
 			letter-spacing: 0.1px;
 			position: relative;
+			border-bottom: none;
 			&_active
 			{
 				box-shadow: none;
@@ -204,8 +213,11 @@
 		&__tabs-text
 		{
 			font-size: 14px;
+			line-height: 20px;
 			padding-bottom: 5px;
 			padding-top: 10px;
+			letter-spacing: 0.25px;
+			font-weight: 700;
 		}
 		&__tabs
 		{
