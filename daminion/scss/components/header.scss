@@ -9,18 +9,30 @@ header
 	{
 		.header__wr
 		{
-			// padding: 40px 0;
+			padding: 20px 0;
 			transform:translateY(0px);
 			transition:.3s all;
+		}
+		.header__logo
+		{
+			svg
+			{
+				transition:.3s all;
+				width: 200px;
+			}
 		}
 		.header__menu
 		{
 			transform:translateY(0px);
 			transition:.3s all;
 		}
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 4px 4px rgba(0, 54, 98, 0.02);
 		transition:.3s all;
 	}
+}
+.overflowH
+{
+	overflow: hidden;
 }
 .header__wr
 {
@@ -35,6 +47,7 @@ header
 {
 	svg
 	{
+		transition:.3s all;
 		max-width: 210px;
 	}
 }
@@ -183,5 +196,18 @@ header
 	.header__burger
 	{
 		display: block;
+	}
+	header
+	{
+		&.showF
+		{
+			box-shadow: none;
+			.header__wr
+			{
+				padding: 16px 0;
+				transform:translateY(0px);
+				transition:.3s all;
+			}
+		}
 	}
 }

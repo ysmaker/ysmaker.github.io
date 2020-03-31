@@ -6130,18 +6130,24 @@ header {
   z-index: 9999999;
   background: #ffffff; }
   header.showF {
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 54, 98, 0.02);
+            box-shadow: 0px 4px 4px rgba(0, 54, 98, 0.02);
     -webkit-transition: .3s all;
     -o-transition: .3s all;
     transition: .3s all; }
     header.showF .header__wr {
+      padding: 20px 0;
       -webkit-transform: translateY(0px);
           -ms-transform: translateY(0px);
               transform: translateY(0px);
       -webkit-transition: .3s all;
       -o-transition: .3s all;
       transition: .3s all; }
+    header.showF .header__logo svg {
+      -webkit-transition: .3s all;
+      -o-transition: .3s all;
+      transition: .3s all;
+      width: 200px; }
     header.showF .header__menu {
       -webkit-transform: translateY(0px);
           -ms-transform: translateY(0px);
@@ -6149,6 +6155,9 @@ header {
       -webkit-transition: .3s all;
       -o-transition: .3s all;
       transition: .3s all; }
+
+.overflowH {
+  overflow: hidden; }
 
 .header__wr {
   position: relative;
@@ -6170,6 +6179,9 @@ header {
   transition: .3s all; }
 
 .header__logo svg {
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
   max-width: 210px; }
 
 .header__menu {
@@ -6288,7 +6300,18 @@ header {
   .header__menu {
     display: none; }
   .header__burger {
-    display: block; } }
+    display: block; }
+  header.showF {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    header.showF .header__wr {
+      padding: 16px 0;
+      -webkit-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-transition: .3s all;
+      -o-transition: .3s all;
+      transition: .3s all; } }
 
 .hero-block {
   padding-top: 70px;
@@ -6862,27 +6885,33 @@ header {
         .questions__item-svg svg {
           width: 24px;
           height: 24px; }
-      .questions__item-answer .quote {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 37px; }
-        .questions__item-answer .quote svg {
+      .questions__item-answer {
+        margin-left: -25px;
+        margin-right: -25px; }
+        .questions__item-answer .quote {
           position: relative;
-          margin-right: 14px;
-          width: 19px; }
-        .questions__item-answer .quote span {
-          position: absolute;
-          right: 0;
-          bottom: -18px; }
-      .questions__item-answer p {
-        font-size: 12px;
-        line-height: 16px; }
-      .questions__item-answer ul {
-        margin-top: 20px;
-        margin-bottom: 20px; }
-        .questions__item-answer ul li {
+          font-size: 14px;
+          line-height: 20px;
+          padding-left: 20px;
+          margin-bottom: 37px; }
+          .questions__item-answer .quote svg {
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 19px; }
+          .questions__item-answer .quote span {
+            position: absolute;
+            right: 0;
+            bottom: -18px; }
+        .questions__item-answer p {
           font-size: 12px;
-          line-height: 16px; } }
+          line-height: 16px; }
+        .questions__item-answer ul {
+          margin-top: 20px;
+          margin-bottom: 20px; }
+          .questions__item-answer ul li {
+            font-size: 12px;
+            line-height: 16px; } }
 
 .companies {
   padding-bottom: 50px;
@@ -7465,7 +7494,7 @@ header {
     .solutions__title_fixed {
       height: 60px;
       width: 100%;
-      top: 138px;
+      top: 99px;
       position: fixed;
       -webkit-transition: .2s all;
       -o-transition: .2s all;
@@ -7603,7 +7632,7 @@ header {
             flex-direction: column; }
     .solutions__list-name span {
       font-size: 16px;
-      line-height: 22px;
+      line-height: 20px;
       letter-spacing: 0.1px;
       color: #6a7678; }
     .solutions__list-name p {

@@ -21,7 +21,7 @@ var o2 =
 	{
 		this.makePhoneMask();
 		this.range();
-		// this.header.stickyHeader();
+		this.header.stickyHeader();
 		this.tabs()
 		this.scroll();
 		this.sliders.neededSlider();
@@ -59,7 +59,7 @@ var o2 =
 			let elementClick = $('.solutions');
 			let destination = $(elementClick).offset().top;
 			let blockHeight = $('.solutions__wrapper').height() + destination;
-			console.log(destination)
+
 			if(window.innerWidth > 1200)
 			{
 				if(window.scrollY > destination && window.scrollY < blockHeight)
@@ -117,6 +117,17 @@ var o2 =
 		{
 		    $(instance).toggleClass('active');
 			$(instance).next().slideToggle(300);
+		}
+	},
+	footerSpoiler:
+	{
+		toggle: function(instance)
+		{
+			if(window.innerWidth < 992)
+			{
+			    $(instance).toggleClass('active');
+				$(instance).next().slideToggle(300);
+			}
 		}
 	},
 	sliders:
@@ -233,6 +244,7 @@ var o2 =
 			$('._overlay').toggleClass('mobile-overlay');
 			$('.header__burger').toggleClass('active');
 			$(popup).toggleClass('_show');
+			$('body').toggleClass('overflowH');
 		}
 	},
 	makePhoneMask: function()

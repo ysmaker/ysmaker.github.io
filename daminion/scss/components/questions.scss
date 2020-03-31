@@ -151,15 +151,20 @@
 			}
 			&-answer
 			{
+				margin-left: -25px;
+				margin-right: -25px;
 				.quote
 				{
+					position: relative;
 					font-size: 14px;
 					line-height: 20px;
+					padding-left: 20px;
 					margin-bottom: 37px;
 					svg
 					{
-						position: relative;
-						margin-right: 14px;
+						position: absolute;
+						left: -8px;
+						top: 0;
 						width: 19px;
 					}
 					span
