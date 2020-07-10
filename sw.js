@@ -1,8 +1,8 @@
 var cacheName = 'hello-pwa';
 var filesToCache = [
-  '/',
-  '/assets/templates/smart-money/css/style.css',
-  '/assets/templates/smart-money/js/main.min.js'
+  '/index.html',
+  '/js/scripts.min.js',
+  '/css/main.min.css'
 ];
 
 /* Start the service worker and cache all of the app's content */
