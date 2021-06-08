@@ -1,0 +1,7 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+{% include "/blocks/slider/slider.twig" %}
+{% include "/blocks/catalog/catalog.twig"  with {'title':'<h2 class="secondary-title">PRODUCTS</h2>'}%}
+{% include "/blocks/element/video.twig" %}
+{% include "/blocks/question/question.twig" %}
+{% endblock %}

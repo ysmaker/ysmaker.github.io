@@ -1,0 +1,29 @@
+.container
+{
+	max-width: $widescreen;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding:0 20px;
+}
+.jGrowl-notification
+{
+	font-size: 14px;
+	line-height: 16px;
+	font-family: 'Montserrat';
+	.jGrowl-close
+	{
+		background: no-repeat url(./svg/close.svg);
+		background-size: cover;
+		width: 14px;
+		height: 14px;
+	}
+}
+@media (max-width: 991px)
+{
+	.no-container
+	{
+		padding: 0;
+	}
+}

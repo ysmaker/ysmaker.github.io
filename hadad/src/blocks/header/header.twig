@@ -1,0 +1,93 @@
+{# index.twig #}
+
+{% block footer %}
+	<header class="_header">
+		<div class="header-main">
+			<div class="container">
+				<div class="header-main-wr">
+					<button class="header-burger" onclick="o2.gPopup.open('_menu','top')">
+						{% include "/assets/svg/burger.svg" %}
+					</button>
+					<a href="#" class="header-logo">
+						<img src="/src/assets/img/logo.png" alt="">
+					</a>
+					<div class="header-menu">
+						<ul>
+							<li class="active"><a href="">Main page</a></li>
+							<li><a href="">Abous us</a></li>
+							<li><a href="">Products</a></li>
+							<li><a href="">Cooperation</a></li>
+						</ul>
+					</div>
+					<div class="header-right">
+						<div class="header-cart">
+							<a href="/">
+								{% include "/assets/svg/swipe.svg" %}
+							</a>
+						</div>
+						<div class="header-cart">
+							<a href="#">
+								{% include "/assets/svg/search.svg" %}
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="_callback" style="display:none;">
+		<div class="g-popup__content _popup-content callback-content">
+			<div onclick="o2.gPopup.close()" class="g-popup__close">
+				{% include '/assets/svg/close.svg' %}
+			</div>
+			<div class="callback-title">
+				Задайте вопрос 
+				<span>с вами свяжутся в ближайшее время</span>
+			</div>
+			<div class="callback-item">
+				<div class="callback-item-title">Имя</div>
+				<label class="g-input">
+					<input name="name" type="text" class="g-input__input" placeholder="Placeholder" autocomplete="off">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+			</div>
+			<div class="callback-item">
+				<div class="callback-item-title">Ваш телефон</div>
+				<label class="g-input">
+					<input name="phone" type="text" class="g-input__input _phone-mask" placeholder="+7 ··· ··· ·· ··" autocomplete="off">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+			</div>
+			<div class="callback-item">
+				<div class="callback-item-title">Ваша электронная почта</div>
+				<label class="g-input">
+					<input name="email" type="text" class="g-input__input" placeholder="Почта" autocomplete="off">
+					<div class="g-input__sub">Error: invalid name</div>
+				</label>
+			</div>
+			<button class="g-button" onclick="o2.gPopup.open('_testpopup-second')">
+				Отправить
+				{% include "/assets/svg/arrow-right.svg" %}
+			</button>
+			<p>Нажимая кнопку «Отправить», высоглашаетесь с <a href="#">политикой обработки</a> персональных данных</p>
+		</div>
+	</div>
+	<div class="_menu" style="display:none;">
+		<div class="g-popup__content _popup-content menu-content">
+			<div onclick="o2.gPopup.close()" class="g-popup__close">
+				{% include '/assets/svg/close.svg' %}
+			</div>
+			<div class="callback-title">
+				MENU
+			</div>
+			<div class="menu-list">
+				<ul>
+					<li class="active"><a href="">Main page</a></li>
+					<li><a href="">Abous us</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Cooperation</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+{% include "/blocks/menu/menu.twig" %}
+{% include "/blocks/breadcrumbs/breadcrumbs.twig" with {'title':'<h1>Контакты</h1>'} %}
+{% include "/blocks/map/map.twig" %}
+{% include "/blocks/trade/trade.twig" %}
+{% include "/blocks/choose/choose.twig" %}
+{% include "/blocks/question/question.twig" %}
+{% endblock %}

@@ -1,0 +1,32 @@
+.question
+{
+	padding: 72px 0;
+	position: relative;
+	&:before
+	{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: no-repeat url("./img/bg.png");
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: 100%;
+		animation: sliderimg .4s ease-out;
+	}
+	.wr-title
+	{
+		margin-bottom: 124px;
+	}
+}
+.question-form
+{
+	display: flex;
+	max-width: 620px;
+	margin: 0 auto;
+}
+.question-wr
+{
+	text-align: center;
+}

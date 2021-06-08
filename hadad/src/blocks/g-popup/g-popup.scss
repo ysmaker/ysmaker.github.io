@@ -1,0 +1,175 @@
+.ui-kit__section .ui-kit__title--popup
+{
+	margin-bottom: 30px;
+}
+.g-popup
+{
+	position: fixed;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width:100%;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.52);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+	visibility: hidden;
+	opacity:0;
+	transform: translateY(-5px);
+	transition: transform 0.1s ease-out;
+	&.open
+	{
+		visibility: visible;
+		opacity:1;
+		transform: translateY(0px);
+	}
+	&.top
+	{
+		align-items: flex-start;
+	}
+}
+.g-popup__content
+{
+	width: 600px;
+	max-height: calc(100% - 20px);
+	background: #fff;
+	margin:0 auto;
+	padding:20px;
+	border-radius:4px;
+	font-size:14px;
+	box-shadow: 0 4px 10px rgba(0,0,0,.08);
+	overflow: auto;
+	position: relative;
+}
+.g-popup__close
+{
+	position: absolute;
+	top:7px;
+	right: 7px;
+	cursor: pointer;
+}
+.menu-content
+{
+	width: 100%;
+	height: 100%;
+	padding-top: 38px;
+    padding-left: 21px;
+	.g-popup__close
+	{
+		position: relative;
+		left: 0;
+		top: 0;
+		margin-bottom: 20px;
+		svg
+		{
+			width: 24px;
+			height: 24px;
+			path
+			{
+				fill: black;
+			}
+		}
+	}
+}
+.menu-list
+{
+	li
+	{
+		a
+		{
+			padding: 6px 0;
+			letter-spacing: -0.5px;
+			color: #303030;
+			display: block;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}
+.menu-icon
+{
+	svg
+	{
+		path
+		{
+			fill: black;
+		}
+	}
+}
+.callback-content
+{
+	width: 320px;
+	padding: 16px 24px;
+	padding-top: 40px;
+	p
+	{
+		font-size: 12px;
+		letter-spacing: -0.2px;
+		a
+		{
+			display: inline-block;
+			color: #6a7678;
+			border-bottom: 1px solid $brand-color;
+		}
+	}
+	.g-popup__close
+	{
+		background: rgba(95, 93, 220, 0.09);
+		border-radius: 50%;
+		text-align: center;
+		width: 48px;
+		height: 48px;
+		right: 12px;
+		top: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: .3s all;
+		svg
+		{
+			width: 18px;
+			height: 18px;
+			path
+			{
+				fill: $brand-color;
+			}
+		}
+		&:hover
+		{
+			background: rgba(95, 93, 220, 0.2);
+			transition: .3s all;
+		}
+	}
+	.g-button
+	{
+		width: 100%;
+	}
+}
+.callback-item
+{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.callback-item-title
+{
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: -0.5px;
+	color: #808080;
+	margin-bottom: 5px;
+}
+.callback-title
+{
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: $bold;
+	margin-bottom: 20px;
+	span
+	{
+		font-weight: $light;
+		display: block;
+	}
+}

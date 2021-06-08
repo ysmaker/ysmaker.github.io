@@ -1,0 +1,67 @@
+.ui-kit__section
+{
+	padding-top: 30px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid rgba(103, 115, 135, 0.1);
+}
+.ui-kit__title
+{
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: $medium;
+	margin-bottom: 0;
+	margin-right: 10px;
+	&--pagination{margin-bottom: 30px;}
+}
+.ui-kit
+{
+	pre.prettyprint
+	{
+		padding-top: 17px;
+		padding-right: 17px;
+		padding-bottom: 0;
+		padding-left: 17px;
+		background: rgba(103, 115, 135, 0.05);
+		font-family: $accent-font;
+		font-size:13px;
+		border: none;
+		border-radius: 4px;
+		tab-size:25px;
+	}
+}
+.ui-kit__tabs-item
+{
+	font-size:12px;
+	line-height: 16px;
+	a{color:rgba(103, 115, 135, 0.7);}
+	&:not(:last-child) {margin-right: 17px; }
+	&.active a, a:hover {
+		color:#677387;
+		text-decoration:underline;
+	}
+}
+.ui-kit__tabs-content{display: none;}
+.ui-kit__tabs-content.open{display: block;}
+.ui-kit__wrapper
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+}
+.ui-kit__tabs-menu
+{
+	color: $secondary-color;
+	margin-bottom: 0;
+	padding: 0;
+	display: flex;
+}
+.ui-kit__tabs-link
+{
+	font-size: 12px;
+	line-height: 14px;
+}
+.ui-kit__print
+{
+	width: 300px;
+	background-color: rgba(103, 115, 135, 0.05);
+}

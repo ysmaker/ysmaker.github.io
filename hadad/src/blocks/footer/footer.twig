@@ -1,0 +1,34 @@
+{# index.twig #}
+
+{% block footer %}
+	<footer class="footer-bot">
+		<div class="container">
+			<div class="footer-wr">
+				<div class="footer-menu">
+					<ul>
+						<li><a href="">About us</a></li>
+						<li><a href="">WHO WE ARE</a></li>
+						<li><a href="">TECHNOLOGY</a></li>
+						<li><a href="">PHILOSOPHY</a></li>
+						<li><a href="">HADAT COSMETICS</a></li>
+						<li><a href="">ADVANTAGES</a></li>
+					</ul>
+				</div>
+				<div class="footer-logo">
+					<img src="/src/assets/img/footer-logo.png" alt="">
+				</div>
+				<ul class="footer-social">
+					<li>
+						<a href="#">
+							{% include "/assets/svg/ig.svg" %}
+						</a>
+						Follow us
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-copyrights">
+			©HADAT 2016 - 2021
+		</div>
+	</footer>
+{% endblock %}

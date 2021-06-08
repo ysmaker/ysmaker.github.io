@@ -1,0 +1,118 @@
+.picture
+{
+	position: relative;
+	width: 600px;
+	svg
+	{
+		width: 100%;
+		position: absolute;
+		z-index: 10;
+		opacity: 0.7;
+		path
+		{
+			&:hover
+			{
+				opacity: 0.75;
+			}
+		}
+		path[data-status='3']
+		{
+			fill: #d02427;
+		}
+	}
+	img
+	{
+		width: 100%;
+	}
+}
+.trade
+{
+	height: 360px;
+	display: flex;
+	align-items: center;
+	background: #000;
+	position: relative;
+	&:before
+	{
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: no-repeat url("/assets/template/imag-store/pages/img/tradein.png");
+		background-size: contain;
+		background-position: right bottom;
+		width: 100%;
+		height: 70%;
+	}
+	.slider-button
+	{
+		width: 200px;
+	}
+}
+.trade-wr
+{
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+}
+.trade-title
+{
+	color: #FFF;
+	font-weight: $bold;
+	font-size: 48px;
+	line-height: 58px;
+	margin-bottom: 32px;
+	svg
+	{
+		vertical-align: middle;
+		width: 42px;
+	}
+}
+.trade-desc
+{
+	color: #FFF;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	margin-bottom: 24px;
+}
+
+
+@media (max-width: 991px)
+{
+	.trade-title
+	{
+		font-size: 38px;
+		line-height: 42px;
+		text-align: center;
+		margin-bottom: 20px;
+		svg
+		{
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.trade-wr
+	{
+		width: 100%;
+	}
+	.trade-desc
+	{
+		text-align: center;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.trade
+	{
+		align-items: flex-start;
+		padding-top: 20px;
+		.slider-button
+		{
+			margin: 0 auto;
+		}
+		&:before
+		{
+			background-size: 50%;
+		}
+	}
+}
