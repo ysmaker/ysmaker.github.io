@@ -60,7 +60,7 @@ function threeDimensional()
 	];
 	let table = document.querySelectorAll('.g-select__items--table .g-select__item');
 	let tableArray = Array.prototype.slice.call(table);
-	let tableElement = '/img/model-kvadrat.glb';
+	let tableElement = 'https://ysmaker.github.io/forest/pages/img/model-kvadrat.glb';
 	tableArray.forEach((el,index)=>
 	{
 		el.addEventListener('click',tableView);
@@ -68,11 +68,11 @@ function threeDimensional()
 	function tableView()
 	{
 		if(this.getAttribute('data-value') == 'code-rectangular')
-			tableElement = '/img/model-kvadrat.glb';
+			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-kvadrat.glb';
 		else if(this.getAttribute('data-value') == 'code-round')
-			tableElement = '/img/model-krug-new.glb';
+			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-krug-new.glb';
 		else
-			tableElement = '/img/model-krug-new.glb';
+			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-krug-new.glb';
 		loaderModel(scene,loader,tableElement,obj,INITIAL_MAP);
 		return tableElement;
 	}
@@ -144,15 +144,15 @@ function loaderModel(scene,loader,tableElement,obj,initialMap,geometry)
 			let txt;
 			let loader_cylinder = new THREE.ImageLoader();
 			if(this.getAttribute('data-value') == 'code-kargach')
-				txt = new THREE.TextureLoader().load('/img/texture.jpeg');
+				txt = new THREE.TextureLoader().load('https://ysmaker.github.io/forest/pages/img/texture.jpeg');
 			if(this.getAttribute('data-value') == 'code-oreh')
-				txt = new THREE.TextureLoader().load('/img/whiteMaterial.jpeg');
+				txt = new THREE.TextureLoader().load('https://ysmaker.github.io/forest/pages/img/whiteMaterial.jpeg');
 			if(this.getAttribute('data-value') == 'code-graph')
-				txt = new THREE.TextureLoader().load('/img/graph.jpeg');
+				txt = new THREE.TextureLoader().load('https://ysmaker.github.io/forest/pages/img/graph.jpeg');
 			if(this.getAttribute('data-value') == 'code-shelk')
-				txt = new THREE.TextureLoader().load('/img/test.gif');
+				txt = new THREE.TextureLoader().load('https://ysmaker.github.io/forest/pages/img/test.gif');
 			if(this.getAttribute('data-value') == 'code-akacia')
-				txt = new THREE.TextureLoader().load('/img/akaci.jpeg');
+				txt = new THREE.TextureLoader().load('https://ysmaker.github.io/forest/pages/img/akaci.jpeg');
 			txt.wrapS = THREE.RepeatWrapping;
 			txt.wrapT = THREE.RepeatWrapping;
 			new_mtl = new THREE.MeshPhongMaterial( {
