@@ -60,7 +60,7 @@ function threeDimensional()
 	];
 	let table = document.querySelectorAll('.g-select__items--table .g-select__item');
 	let tableArray = Array.prototype.slice.call(table);
-	let tableElement = '/img/model-kvadrat.glb';
+	let tableElement = 'https://ysmaker.github.io/forest/pages/img/model-kvadrat.glb';
 	tableArray.forEach((el,index)=>
 	{
 		el.addEventListener('click',tableView);
