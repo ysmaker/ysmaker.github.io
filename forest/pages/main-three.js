@@ -30,7 +30,7 @@ function threeDimensional()
 	controls.update();
 	controls.enableDmping = true;
 	controls.minDistance = 40;
-	controls.maxDistance = 100;
+	controls.maxDistance = 150;
 
 	imageBlock.insertBefore(renderer.domElement,imageBlock.firstChild);
 	const aLight = new THREE.AmbientLight(0xffffff,0.4);
@@ -51,6 +51,7 @@ function threeDimensional()
 	let loader = new THREE.GLTFLoader();
 	var newMaterial = new THREE.MeshPhongMaterial({ color: colorTable, shininess: 200, });
 	let obj = null;
+	let geometry = new THREE.SphereGeometry(50, 50, 50);
 	const INITIAL_MAP =
 	[
 		{childID: "L_8d966dca_8afe_458f_9fc5_cabb543fb8d6_C1_I4", mtl: newMaterial },
@@ -59,7 +60,7 @@ function threeDimensional()
 	];
 	let table = document.querySelectorAll('.g-select__items--table .g-select__item');
 	let tableArray = Array.prototype.slice.call(table);
-	let tableElement = '/img//model-kvadrat.glb';
+	let tableElement = '/img/model-kvadrat.glb';
 	tableArray.forEach((el,index)=>
 	{
 		el.addEventListener('click',tableView);
@@ -67,11 +68,11 @@ function threeDimensional()
 	function tableView()
 	{
 		if(this.getAttribute('data-value') == 'code-rectangular')
-			tableElement = '/img//model-kvadrat.glb';
+			tableElement = '/img/model-kvadrat.glb';
 		else if(this.getAttribute('data-value') == 'code-round')
-			tableElement = '/img//model-krug.glb';
+			tableElement = '/img/model-krug-new.glb';
 		else
-			tableElement = '/img//model-krug.glb';
+			tableElement = '/img/model-krug-new.glb';
 		loaderModel(scene,loader,tableElement,obj,INITIAL_MAP);
 		return tableElement;
 	}
@@ -86,7 +87,7 @@ function threeDimensional()
 	animate();
 }
 
-function loaderModel(scene,loader,tableElement,obj,initialMap)
+function loaderModel(scene,loader,tableElement,obj,initialMap,geometry)
 {
 	loader.load(tableElement,function(gltf)
 	{
@@ -131,8 +132,8 @@ function loaderModel(scene,loader,tableElement,obj,initialMap)
 				{
 					color: parseInt('0x' + color)
 				});
-			setMaterial(theModel, 'L_8d966dca_8afe_458f_9fc5_cabb543fb8d6_C1_I4', new_mtl);;
-			setMaterial(theModel, 'L_ea61aa8d_9d6e_4439_aafc_8b4f5b4d2b37_C1_I8', new_mtl);;
+			setMaterial(theModel, 'L_8d966dca_8afe_458f_9fc5_cabb543fb8d6_C1_I4', new_mtl);
+			setMaterial(theModel, 'L_ea61aa8d_9d6e_4439_aafc_8b4f5b4d2b37_C1_I8', new_mtl);
 			setMaterial(theModel, 'Mesh_1', new_mtl);
 			setMaterial(theModel, 'Mesh_2', new_mtl);
 			// setMaterial(theModel, 'L_ea61aa8d_9d6e_4439_aafc_8b4f5b4d2b37_C1_I8', new_mtl);
@@ -141,24 +142,24 @@ function loaderModel(scene,loader,tableElement,obj,initialMap)
 		{
 			let new_mtl;
 			let txt;
+			let loader_cylinder = new THREE.ImageLoader();
 			if(this.getAttribute('data-value') == 'code-kargach')
-				txt = new THREE.TextureLoader().load('/img//texture.jpeg');
+				txt = new THREE.TextureLoader().load('/img/texture.jpeg');
 			if(this.getAttribute('data-value') == 'code-oreh')
-				txt = new THREE.TextureLoader().load('/img//whiteMaterial.jpeg');
+				txt = new THREE.TextureLoader().load('/img/whiteMaterial.jpeg');
 			if(this.getAttribute('data-value') == 'code-graph')
-				txt = new THREE.TextureLoader().load('/img//graph.jpeg');
+				txt = new THREE.TextureLoader().load('/img/graph.jpeg');
 			if(this.getAttribute('data-value') == 'code-shelk')
-				txt = new THREE.TextureLoader().load('/img//whiteMaterial.jpeg');
+				txt = new THREE.TextureLoader().load('/img/test.gif');
 			if(this.getAttribute('data-value') == 'code-akacia')
-				txt = new THREE.TextureLoader().load('/img//akaci.jpeg');
+				txt = new THREE.TextureLoader().load('/img/akaci.jpeg');
 			txt.wrapS = THREE.RepeatWrapping;
-    		txt.wrapT = THREE.RepeatWrapping;
-			txt.repeat.set(1,1);
+			txt.wrapT = THREE.RepeatWrapping;
 			new_mtl = new THREE.MeshPhongMaterial( {
 				map: txt,
-				// shininess: color.shininess ? color.shininess : 10
+				side: THREE.DoubleSide
 			});
-			setMaterial(theModel, 'L_8d966dca_8afe_458f_9fc5_cabb543fb8d6_C1_I4', new_mtl);;
+			setMaterial(theModel, 'L_8d966dca_8afe_458f_9fc5_cabb543fb8d6_C1_I4', new_mtl);
 			setMaterial(theModel, 'Mesh_2', new_mtl);
 		}
 		function setMaterial(parent, type, mtl)
