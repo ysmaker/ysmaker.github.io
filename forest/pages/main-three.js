@@ -68,11 +68,11 @@ function threeDimensional()
 	function tableView()
 	{
 		if(this.getAttribute('data-value') == 'code-rectangular')
-			tableElement = '/img/model-kvadrat.glb';
+			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-kvadrat.glb';
 		else if(this.getAttribute('data-value') == 'code-round')
-			tableElement = '/img/model-krug-new.glb';
+			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-krug-new.glb';
 		else
-			tableElement = '/img/model-krug-new.glb';
+			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-krug-new.glb';
 		loaderModel(scene,loader,tableElement,obj,INITIAL_MAP);
 		return tableElement;
 	}
