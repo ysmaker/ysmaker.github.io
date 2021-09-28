@@ -82,4 +82,9 @@
 	background: black;
 	color: white;
 	margin-bottom: 1px;
+	&.translate
+	{
+		transform:translateX(-40px);
+		transition: .2s;
+	}
 }

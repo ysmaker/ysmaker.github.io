@@ -29,7 +29,7 @@ function threeDimensional()
 	const controls = new OrbitControls(camera,renderer.domElement);
 	controls.update();
 	controls.enableDmping = true;
-	controls.minDistance = 40;
+	controls.minDistance = 35;
 	controls.maxDistance = 150;
 
 	imageBlock.insertBefore(renderer.domElement,imageBlock.firstChild);
@@ -60,7 +60,7 @@ function threeDimensional()
 	];
 	let table = document.querySelectorAll('.g-select__items--table .g-select__item');
 	let tableArray = Array.prototype.slice.call(table);
-	let tableElement = 'https://ysmaker.github.io/forest/pages/img/model-kvadrat.glb';
+	let tableElement = '/img/model-kvadrat.glb';
 	tableArray.forEach((el,index)=>
 	{
 		el.addEventListener('click',tableView);
@@ -68,11 +68,11 @@ function threeDimensional()
 	function tableView()
 	{
 		if(this.getAttribute('data-value') == 'code-rectangular')
-			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-kvadrat.glb';
+			tableElement = '/img/model-kvadrat.glb';
 		else if(this.getAttribute('data-value') == 'code-round')
-			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-krug-new.glb';
+			tableElement = '/img/model-krug-new.glb';
 		else
-			tableElement = 'https://ysmaker.github.io/forest/pages/img/model-krug-new.glb';
+			tableElement = '/img/model-krug-new.glb';
 		loaderModel(scene,loader,tableElement,obj,INITIAL_MAP);
 		return tableElement;
 	}
@@ -190,7 +190,7 @@ function loaderModel(scene,loader,tableElement,obj,initialMap,geometry)
 						// if (o.name.includes('L_ea61aa8d_9d6e_4439_aafc_8b4f5b4d2b37_C1_I8'))
 						{
 							o.scale.x = $(inputVal[0]).val() * 0.01;
-							o.scale.y = $(inputVal[1]).val() * 0.01;
+							o.scale.z = $(inputVal[1]).val() * 0.01;
 						}
 						if (o.name.includes('Mesh_0'))
 						// if (o.name.includes('L_ea61aa8d_9d6e_4439_aafc_8b4f5b4d2b37_C1_I8'))
@@ -218,7 +218,7 @@ function loaderModel(scene,loader,tableElement,obj,initialMap,geometry)
 						if (o.name.includes('L_ea61aa8d_9d6e_4439_aafc_8b4f5b4d2b37_C1_I8'))
 						{
 							o.scale.x = $(inputVal[0]).val() * 0.01;
-							o.scale.y = $(inputVal[1]).val() * 0.01;
+							o.scale.z = $(inputVal[1]).val() * 0.01;
 						}
 					}
 				});

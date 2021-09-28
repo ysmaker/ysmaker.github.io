@@ -804,9 +804,9 @@ li.L9 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  -webkit-flex-basis: 45%;
-  -ms-flex-preferred-size: 45%;
-  flex-basis: 45%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
 }
 
 .forest__flex-image-block {
@@ -818,8 +818,8 @@ li.L9 {
 
 .forest__flex-image-with {
   position: absolute;
-  width: 100%;
-  left: 0;
+  width: 90%;
+  left: 15px;
   bottom: -40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -829,15 +829,17 @@ li.L9 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 2px;
+  width: 100%;
+  background: #E3E3E3;
 }
 
 .forest__flex-image-height {
   position: absolute;
-  width: 67%;
-  right: -181px;
-  -webkit-transform: rotate(90deg) translateX(43%);
-  -ms-transform: rotate(90deg) translateX(43%);
-  transform: rotate(90deg) translateX(43%);
+  width: 2px;
+  height: 100%;
+  background: #E3E3E3;
+  left: 0px;
   top: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -849,22 +851,30 @@ li.L9 {
   align-items: center;
 }
 
-.forest__flex-image-with-line {
-  height: 2px;
-  width: 100%;
-  background: #E3E3E3;
-}
-
-.forest__flex-image-with-payment {
-  padding: 0 10px;
-  text-align: center;
-  background: white;
-  height: 32px;
-  line-height: 32px;
-  border: 1px solid #E3E3E3;
+.forest__flex-image-height .forest__flex-image-with-payment {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(270deg);
+  -ms-transform: translateY(-50%) rotate(270deg);
+  transform: translateY(-50%) rotate(270deg);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  width: 60px;
+  left: -50px;
+}
+
+.forest__flex-image-with-payment {
+  line-height: 32px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .forest__flex-img {
@@ -1535,6 +1545,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background: black;
   color: white;
   margin-bottom: 1px;
+}
+
+.forest__flex-content-item-body .noUi-horizontal .noUi-tooltip.translate {
+  -webkit-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  transform: translateX(-40px);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
 }
 
 .g-select {

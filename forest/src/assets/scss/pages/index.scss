@@ -13,7 +13,7 @@
 	margin-right: 100px;
 	position: sticky;
 	top: 0;
-	flex-basis: 45%;
+	flex-basis: 50%;
 }
 .forest__flex-image-block
 {
@@ -25,37 +25,49 @@
 .forest__flex-image-with
 {
 	position: absolute;
-	width: 100%;
-	left: 0;
+	width: 90%;
+	left: 15px;
 	bottom: -40px;
 	display: flex;
 	align-items: center;
-}
-.forest__flex-image-height
-{
-	position: absolute;
-	width: 67%;
-	right: -181px;
-	transform: rotate(90deg) translateX(43%);
-	top: 0;
-	display: flex;
-	align-items: center
-}
-.forest__flex-image-with-line
-{
 	height: 2px;
 	width: 100%;
 	background: #E3E3E3;
 }
+.forest__flex-image-height
+{
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background: #E3E3E3;
+	left: 0px;
+	top: 0;
+	display: flex;
+	align-items: center;
+	.forest__flex-image-with-payment
+	{
+		position: absolute;
+		top: 50%;
+		transform:translateY(-50%) rotate(270deg);
+		flex-shrink: 0;
+		width: 60px;
+		left: -50px;
+	}
+}
+// .forest__flex-image-with-line
+// {
+// 	height: 2px;
+// 	width: 100%;
+// 	background: #E3E3E3;
+// }
 .forest__flex-image-with-payment
 {
-	padding: 0 10px;
-	text-align: center;
-	background: white;
-	height: 32px;
 	line-height: 32px;
-	border: 1px solid #E3E3E3;
 	flex-shrink: 0;
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	transform:translateX(-50%);
 }
 .forest__flex-img
 {
