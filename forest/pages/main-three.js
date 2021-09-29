@@ -119,6 +119,17 @@ function loaderModel(scene,loader,tableElement,obj,initialMap,geometry)
 		tableColor.addEventListener('input',changeColorTable);
 		let tableMaterial = document.querySelectorAll('._forest__flex-content-item-item');
 		let tableMaterialArray = Array.prototype.slice.call(tableMaterial);
+		let new_mtl;
+		let txt;
+		txt = new THREE.TextureLoader().load('https://ysmaker.github.io/forest/pages/img/texture.jpeg');
+		txt.wrapS = THREE.RepeatWrapping;
+		txt.wrapT = THREE.RepeatWrapping;
+		new_mtl = new THREE.MeshPhongMaterial({
+			map: txt,
+			side: THREE.DoubleSide
+		});
+		setMaterial(theModel, 'L_8d966dca_8afe_458f_9fc5_cabb543fb8d6_C1_I4', new_mtl);
+		setMaterial(theModel, 'Mesh_2', new_mtl);
 		tableMaterialArray.forEach((el,index)=>
 		{
 			el.addEventListener('click',changeMaterialTable);
@@ -142,7 +153,6 @@ function loaderModel(scene,loader,tableElement,obj,initialMap,geometry)
 		{
 			let new_mtl;
 			let txt;
-			let loader_cylinder = new THREE.ImageLoader();
 			if(this.getAttribute('data-value') == 'code-kargach')
 				txt = new THREE.TextureLoader().load('https://ysmaker.github.io/forest/pages/img/texture.jpeg');
 			if(this.getAttribute('data-value') == 'code-oreh')

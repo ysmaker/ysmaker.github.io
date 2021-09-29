@@ -76,7 +76,7 @@ o2.gRangeSlider =
 		$slider.find('._label-to').html(to);
 		$slider.find('._label-from').html(from);
 		o2.changeSize($slider,values[0],labTo);
-		console.log($slider.find('._max'));
+		// console.log($slider.find('._max'));
 		if(values[0] == $slider.find('._range-slider').data('max'))
 			$slider.find('.noUi-tooltip').addClass('translate');
 		else
