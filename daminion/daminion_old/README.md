@@ -1,2 +1,0 @@
-# daminion
-daminion project
